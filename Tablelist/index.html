@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图书检索</title>
+
+    <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+    <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+    <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+    <link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+	<link href="css/searchline.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body class="body-wrapper">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div div class="col-md-10 offset-md-1 col-lg-9 offset-lg-0"></div>
+                <div class="col-md-10 offset-md-1 col-lg-3 offset-lg-0">
+                
+                    <div class="header">
+                    <?php
+                    error_reporting(0);
+                	if($_SESSION['username']!=NULL){
+						echo "<a class='hvr-grow' href='../Usermain.html'><i class='fa fa-user icon-user'></i></a>";
+					}
+					else{
+						echo "<a class='hvr-grow' href='../login.html'><i class='fa fa-user icon-user'></i></a>";
+					}
+                	
+               		?>
+<!--                         <a class="hvr-grow" href="../login.html"><i class="fa fa-user icon-user"></i></a> -->
+                    </div>
+                    <div class="header-info">
+                    <?php
+                    error_reporting(0);
+                	if($_SESSION['username']!=NULL){
+						$tmp=$_SESSION['username'];
+						echo "<p>$tmp</p><p>状态：已登录</p>";
+					}
+					else{
+						echo "<p>您还未登录>_<</p><p>单击跳转至登录页！</p>";
+					}
+                	
+               		?>
+                    </div>
+                </div>
+                
+                
+            </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div div class="col-md-10 offset-md-1 col-lg-2 offset-lg-0"></div>
+                <div div class="col-md-10 offset-md-1 col-lg-8 offset-lg-0">
+                    <div class="search-title">
+                        <h1>图书检索</h1>
+                    </div>
+                    <div class="widget search">
+						<form class="form" method="post" action="Search.php">
+                        <div class="input-group">
+                            <select name="searchtype" class="form-control">
+                                <option value="6">题名</option>
+                                <option value="1">作者</option>
+                                <option value="2">出版日期</option>
+                                <option value="3">出版社</option>
+                                <option value="4">内容摘要</option>
+                                <option value="5">书号</option>
+                            </select>
+                            <select name="searchtype_second" class="form-control">
+                                <option value="3">前方一致</option>
+                                <option value="1">任意匹配</option>
+                                <option value="2">完全匹配</option>
+                            </select>
+                            <input type="text" name="keyword" class="form-control" id="expire" placeholder="Search...">
+                            <span class="input-group-addon"><a style="color:white"><i class="fa fa-search"></i><input type="submit" value="搜索" style="background-color: transparent;border:none;color:white;"></a></span>
+                        </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div div class="col-md-10 offset-md-1 col-lg-2 offset-lg-0"></div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/tether/js/tether.min.js"></script>
+    <script src="plugins/raty/jquery.raty-fa.js"></script>
+    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

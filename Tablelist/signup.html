@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>图书检索</title>
+
+  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+  <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+  <link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/hover.css" rel="stylesheet">
+  <link href="css/mystyle.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body class="bg-image">
+
+  <section style="background:white">
+    <div class="container">
+      <div class="row">
+        <div div class="col-md-10 offset-md-1 col-lg-9 offset-lg-0">
+          <div style="margin-top: 20px">
+            <a href="index.html">
+              <h2>图书检索</h2>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-10 offset-md-1 col-lg-3 offset-lg-0">
+
+        </div>
+  </section>
+
+  <section>
+    <div class="widget-search reg-box">
+      <h2 style="text-align:center">注册</h2>
+      <form id="modifyPasswordForm" method="post" style="margin:10px">
+        <div class="form-group">
+          <input type="text" class="form-control" id="regName" name="regName" placeholder="用户名">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="regEmail" name="regEmail" placeholder="邮箱">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="regPwd" name="regPwd" placeholder="密码">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="regRepwd" name="regRepwd" placeholder="确认密码">
+        </div>
+        <input type="submit" class="btn btn-block btn-primary" style="margin-top:20px;margin-bottom:30px" value="注册" />
+        
+      </form>
+    </div>
+  </section>
+
+
+  <!-- JAVASCRIPTS -->
+  <script src="plugins/jquery/dist/jquery.min.js"></script>
+  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+  <script src="plugins/tether/js/tether.min.js"></script>
+  <script src="plugins/raty/jquery.raty-fa.js"></script>
+  <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+  <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="plugins/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+  <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+  <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+  <script>
+    //用户名必须需包含数字和大小写字母中至少两种
+    $.validator.addMethod("passwordrule", function (value, element) {
+      var userblank = /^(?![0-9]+$)(?![a-z]+$)(?![A-Z]+$)[0-9A-Za-z]{6,10}$/;
+      return this.optional(element) || (userblank.test(value));
+    }, "需包含数字和大小写字母中至少两种字符的5-10位字符");
+
+    $("#modifyPasswordForm").validate({
+      rules: {
+        regName: {
+          required: true,
+          minlength: 4,
+          maxlength: 10
+        },
+        regEmail: {
+          required: true,
+          email: true
+        },
+        regPwd: {
+          required: true,
+          minlength: 6,
+          passwordrule: true
+        },
+        regRepwd: {
+          required: true,
+          minlength: 6,
+          equalTo: "#regPwd"
+        }
+      },
+      messages: {
+        regName: {
+          required: "请输入您的用户名",
+          minlength: "请输入最少4字符",
+          maxlength: "请输入最多10字符"
+        },
+        regEmail: {
+          required: "请输入您的邮箱",
+          email: "请输入正确的邮箱"
+        },
+        regPwd: {
+          required: "请输入您的密码",
+          minlength: "请输入最少为6字符",
+          passwordrule: "为了保证您的账号安全，需包含数字和大小写字母中至少两种字符的6-10位字符!"
+        },
+        regRepwd: {
+          required: "请输入您的确认密码",
+          minlength: "请输入最少为6字符",
+          equalTo: "两次密码输入不一致"
+
+        },
+      },
+      submitHandler: function () {
+        layer.msg("成功");
+      }
+
+
+    });
+  </script>
+
+</body>
+
+</html>

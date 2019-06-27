@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Casework | Design Studio</title>
+<meta name="robots" content="index, follow" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!-- Basic CSS Style (other styles are included in this file) -->
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+
+
+
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" />
+<![endif]-->
+
+<!-- JavaScript Files -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-5.5.5-packed.js"></script>
+<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+// Nivo Slider
+
+$(window).load(function() {
+    $('#nivoSlider').nivoSlider({
+        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+        animSpeed: 500, // Slide transition speed
+        pauseTime: 5000, // How long each slide will show
+        startSlide: 0, // Set starting Slide (0 index)
+        captionOpacity: 0.8 // Universal caption opacity
+    });
+});
+
+// Image Overlays
+
+$(document).ready(function() {
+
+    $('.plus').mosaic({
+        opacity: 0.7
+    });
+
+// var $whatever        = $('.grandchild');
+// var ending_right     = window.innerWidth - $whatever.offset().left + $whatever.outerWidth();
+// alert(ending_right);
+
+});
+
+// Carousel
+
+$(window).load(function() {
+    $('#carousel ul').carouFredSel({
+        items: 4,
+        scroll: {
+        items: 4,
+        // pauseDuration: 5000, // uncomment this line when "auto" option is true
+        duration: 1000
+        },
+        auto: false,
+        prev: '#prev',
+        next: '#next'
+    });
+});
+
+</script>
+
+
+
+
+<style> 
+body{ text-align:center} 
+.div5{ margin:0 auto; width:400px; height:100px; border:1px solid #F00} 
+</style>
+
+
+
+</head>
+
+<body>
+
+<!-- Start Wrapper -->
+<div id="wrapper">
+
+    <!-- Start Header -->
+    <div class="top-header"></div>
+
+    <div id="header">
+        <div class="into-header">
+
+            <!-- Start Logo -->
+            <div class="logo">
+                <a href="index-2.html"><img src="images/logo.png" alt="Casework | Design Studio" title="Casework | Design Studio" /></a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Start Top Menu -->
+            <div class="topmenu">
+
+                <!-- Start Dropdown Menu -->
+                <ul id="menu" class="menu-nav">
+
+                    <li class="parent current"><a href="../Usermain.html">图书主页</a>
+                        <ul class="child">
+                            <li class="current"><a href="../GetUserInfo.php">个人信息</a></li>
+                            <li><a href="../Usermain.html">个人主页</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">新书推荐</a>
+                        <ul class="child">
+                            <li><a href="FullIntroduce.php">新书详述</a></li>
+                            <li><a href="index.html">推荐主页</a></li>
+                            <li><a href="PublisherIntroduce.php">出版社介绍</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">作者主页</a>
+                        <ul class="child">
+                            <li><a href="https://github.com/Nevertorlate">概览</a></li>
+                            <li><a href="https://github.com/Nevertorlate?tab=repositories">个人项目</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+                <!-- End Dropdown Menu -->
+
+                <!-- Start Social -->
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="images/social/twitter_off.png" alt="Twitter" title="Twitter" /></a></li>
+                        <li><a href="#"><img src="images/social/facebook_off.png" alt="Facebook" title="Facebook" /></a></li>   
+                        <li><a href="#"><img src="images/social/vimeo_off.png" alt="Vimeo" title="Vimeo" /></a></li>
+                        <li><a href="#"><img src="images/social/flickr_off.png" alt="Flickr" title="Flickr" /></a></li>
+                    </ul>
+                </div>
+                <!-- End Social -->
+
+            </div>
+            <!-- End Top Menu -->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="horizon-line"></div>  
+    <div class="header-shadow"></div>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div id="content">
+
+        <!-- Start Slider Wrapper -->
+        <div class="slider">
+        <div class="top-glow"></div>
+            <div class="slider-wrapper">
+            <div class="top-shadow"></div>
+
+                <!-- Start Nivo Slider -->
+                <div class="theme-default">
+
+                    <div id="nivoSlider" class="nivoSlider">
+                        <img src="images/content/slider/slider_image_1.jpg" alt="" />
+                        <a href="portfolio_post.html"><img src="images/content/slider/slider_image_2.jpg" alt="" title="积财千万，无过读书。 —— 颜之推" /></a>
+                        <img src="images/content/slider/slider_image_3.jpg" alt="" title="不去读书就没有真正的教养，同时也不可能有什么鉴别力。 —— 赫尔岑"/>
+                        <img src="images/content/slider/slider_image_4.jpg" alt="" title="读书不知味，不如束高阁；蠢鱼尔何如，终日食糟粕。 —— 袁牧" />
+                        <img src="images/content/slider/slider_image_5.jpg" alt="" title="纸上得来终觉浅，绝知此事要躬行。 —— 陆游"/>
+                        <img src="images/content/slider/slider_image_6.jpg" alt="" title="从来没有人为了读书而读书，只有在书中读自己，在书中发现自己，或检查自己。 —— 罗曼·罗兰" />
+                    </div>
+
+                    <div id="htmlcaption" class="nivo-html-caption">
+                        <strong>This</strong> is an <em>HTML</em> caption with content about your <span style="color:#00AEFF;">services or products</span> with <a href="#">a link</a>.
+                    </div>
+
+                </div>
+                <!-- End Nivo Slider -->
+
+            <div class="bottom-shadow"></div>
+            </div>
+        <div class="bottom-glow"></div>
+        </div>
+        <!-- End Slider Wrapper -->
+
+        <!-- Start Intro Text -->
+        <div class="intro">
+        <div class="horizon-line"></div>
+            <div class="top-shadow"></div>
+                <p>新书到馆</p>
+            <div class="bottom-shadow"></div>
+        <div class="horizon-line"></div>
+        </div>
+        <!-- End Intro Text -->
+
+        <!-- Start Services -->
+        <div class="services mosaic-wide">
+				<?php
+				echo $_SESSION['out_NewBook'];
+				?>
+        <div class="clear"></div>
+        </div>
+        <!-- End Services -->
+        <div5>
+				<?php
+				echo $_SESSION['out_BookPage'];
+				?>
+		</div5>
+        <!-- Start Projects -->
+        <div class="projects">
+        <div class="horizon-line"></div>
+
+        <!-- Start Carousel -->
+        <div class="column three-fourth">
+            <div id="carousel">
+                <div class="wrapper">
+                    <ul>
+                        <!-- Start Project 1 -->
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 1 Details"><img src="images/content/portfolio/portfolio_thumb_1.jpg" alt="Project 1" /></a></li>
+                        <!-- End Project 1 -->
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 2 Details"><img src="images/content/portfolio/portfolio_thumb_2.jpg" alt="Project 2" /></a></li>
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 3 Details"><img src="images/content/portfolio/portfolio_thumb_3.jpg" alt="Project 3" /></a></li>
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 4 Details"><img src="images/content/portfolio/portfolio_thumb_4.jpg" alt="Project 4" /></a></li>
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 5 Details"><img src="images/content/portfolio/portfolio_thumb_5.jpg" alt="Project 5" /></a></li>
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 6 Details"><img src="images/content/portfolio/portfolio_thumb_6.jpg" alt="Project 6" /></a></li>
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 7 Details"><img src="images/content/portfolio/portfolio_thumb_7.jpg" alt="Project 7" /></a></li>
+                        <li class="imagebox"><a href="portfolio_post.html" title="View Project 8 Details"><img src="images/content/portfolio/portfolio_thumb_8.jpg" alt="Project 8" /></a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <a id="prev" class="prev" href="#" title="Previous Line">&lt;</a>
+                <a id="next" class="next" href="#" title="Next Line">&gt;</a>
+            </div>
+        </div>
+        <!-- End Carousel -->
+
+        <div class="column one-fourth latest">
+            <div class="description">
+                <h2>Projects / <em>图 书 馆 最 新 信 息</em></h2>
+                <h2><em><a href="http://www.lib.tongji.edu.cn/site/tongji/0e66e34a-b86a-4999-9406-3d81b4f93876/info/2018/73c03b74-5119-4ad5-81a4-fb8d5840d3fc.html">同济大学图书馆剔旧图书意见征询.</a></em></h2>
+            	<h2><em><a href="http://www.lib.tongji.edu.cn/site/tongji/0e66e34a-b86a-4999-9406-3d81b4f93876/info/2016/78bb7f17-8dfe-432c-8dd1-2e699f91f6ef.html">关于采购“SAGE”过刊库单一来源公示</a></em></h2>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="horizon-line"></div>
+        </div>
+        <!-- End Projects -->
+
+        <!-- Start Info Blocks -->
+        <div class="info-blocks">
+
+            <!-- Start Testimonials -->
+            <div class="testimonials left">
+                <h2>Testimonials / <em>What our readers are saying</em></h2>
+
+                <!-- Start Testimonial -->
+                <div class="testimonial bubble1">
+                    <div class="content">
+                        <p>在这个浑浊的世界里读者就像是一股清流来洗涤我们心灵的灰尘，除去心灵的污垢。给你好看的杂志才是好杂志，读者值得我拥有，值得推荐..</p>
+                    </div>
+                    <div class="shadow">
+                        <div class="arrow"><span class="author">菜虚鲲  ---《白夜行第一版》</span></div>
+                    </div>
+                </div>
+                <!-- End Testimonial -->
+
+        	</div>
+            <!-- End Testimonials -->
+
+            <!-- Start Who We Are -->
+            <div class="whoweare right">
+                <h2>同济大学 / <em>校训：同舟共济</em></h2>
+                <p style="text-indent: 2em;">同济大学（Tongji University），简称“同济”，是中华人民共和国教育部直属，由教育部、国家海洋局和上海市共建的全国重点大学，历史悠久、声誉卓著，是国家“双一流”、“211工程”、“985工程”重点建设高校，也是收生标准最严格的中国大学之一；入选2011计划、珠峰计划、卓越工程师教育培养计划、卓越法律人才教育培养计划.....</p>
+                <a class="blue-button" href="https://www.tongji.edu.cn/" onclick="this.blur(); window.href='https://www.tongji.edu.cn/';">Read More</a>
+            </div>
+            <!-- End Who We Are -->
+
+        <div class="clear"></div>  
+        </div>
+        <!-- End Info Blocks -->
+
+    <div class="horizon-line"></div>  
+    </div>
+    <!-- End Content -->
+
+</div>
+<!-- End Wrapper -->
+
+<!-- Start Footer -->
+<div id="footer">
+    
+    <div class="footer-shadow"></div>
+    <div class="horizon-line"></div>
+
+    <!-- Start Footer Blocks -->
+    <div class="footer-bg">
+    <div class="into-footer">
+
+        <!-- Start Recent Posts -->
+        <div class="recent-posts left">
+
+            <div class="footer-title"><h3>同济要闻</h3></div>
+
+            <div class="footer-block">
+
+                <!-- Start Recent Posts 1 -->
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69630.htm"><img src="images/content/blog/blog_thumb_1.jpg" alt="Vestibulum adipiscing commodo via tellus volutpat" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69630.htm">聚焦“心理育人”，同济心理文化月拉开帷幕</a></h4>
+                    <span class="info">May 8, 2019 | 12 comments</span>
+                </div>
+                <!-- End Recent Posts 1 -->
+
+                <div class="imagebox">
+                    <a href="blog_post.html"><img src="images/content/blog/blog_thumb_2.jpg" alt="Pellentesque magna luctus maecenas" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="blog_post.html">同济学子作品亮相2019年校“五月科技节”</a></h4>
+                    <span class="info">May 7, 2019 | 4 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69586.htm"><img src="images/content/blog/blog_thumb_3.jpg" alt="Euismod vitae viverra quis eu massa condimentum" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69586.htm">同济李昂当选“2018上海大学生年度人物”</a></h4>
+                    <span class="info">May 5, 2019 | 23 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69580.htm"><img src="images/content/blog/blog_thumb_4.jpg" alt="Quisque gravida aliquet sapien" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69580.htm">纪念五四，师生共话数学人使命担当</a></h4>
+                    <span class="info">May 4, 2019 | 10 comments</span>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Recent Posts -->
+
+        <!-- Start Get in Touch -->
+        <div class="get-in-touch right">
+
+            <div class="footer-title"><h3>与我们联系：</h3></div>
+
+            <div class="footer-block">
+                <span class="location">上海市嘉定区曹安公路4800号</span>
+                <span class="phone">0791-15879036879</span>
+                <span class="email">2458048592@qq.com</span>
+            </div>
+        </div>
+        <!-- End Get in Touch -->
+
+    </div>
+    </div>
+    <!-- End Footer Blocks -->
+
+    <!-- Start Bottom Panel -->
+    <div id="bottom">
+        <div class="into-bottom">
+            <span class="left">Tongji 涂远鹏 &copy; 2019. All Rights Reserved.</span>            <div class="backtop" id="toTop" title="Back to Top"></div>
+        </div>
+    </div>
+    <!-- End Bottom Panel -->
+
+</div>
+<!-- End Footer -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

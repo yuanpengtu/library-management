@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Casework | Design Studio</title>
+<meta name="robots" content="index, follow" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!-- Basic CSS Style (other styles are included in this file) -->
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen" />
+
+
+
+
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" />
+<![endif]-->
+
+<!-- JavaScript Files -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/jquery.quicksand.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/portfolio.filter.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">
+
+$(window).load(function() {
+
+    // Equal Column Height
+
+    var biggestHeight = 0;
+
+    $('ul.image-grid li').each(function(){
+        if($(this).height() > biggestHeight){
+            biggestHeight = $(this).height();
+        }
+    });
+    
+    $('ul.image-grid li').height(biggestHeight);
+});
+
+$(document).ready(function() {
+
+    // Image Overlays
+
+    $('.lower-panel').mosaic({
+        animation: 'slide'
+    });
+
+    $('.upper-panel').mosaic({
+        animation: 'slide',
+        anchor_y: 'top'
+    });
+
+    $('.zoom').mosaic({
+        opacity: 0.7
+    });
+
+    $('.play').mosaic({
+        opacity: 0.7
+    });
+
+    // prettyPhoto
+
+    $("#filter a[rel^='prettyPhoto']").prettyPhoto({
+        theme: 'light_square', // or "dark_square" for dark style
+        animation_speed: 'fast',
+        overlay_gallery: false
+    });
+
+    // Circle
+
+    $('.multi').cycle({
+        fx: 'scrollVert',
+        speed: 500,
+        timeout: 0,
+        next: '#down',
+        prev: '#up'
+    });
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+<!-- Start Wrapper -->
+<div id="wrapper">
+
+    <!-- Start Header -->
+    <div class="top-header"></div>
+
+    <div id="header">
+        <div class="into-header">
+
+            <!-- Start Logo -->
+            <div class="logo">
+                <a href="index-2.html"><img src="images/logo.png" alt="Casework | Design Studio" title="Casework | Design Studio" /></a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Start Top Menu -->
+            <div class="topmenu">
+
+                <!-- Start Dropdown Menu -->
+                <ul id="menu" class="menu-nav">
+
+                    <li class="parent current"><a href="../Usermain.html">图书主页</a>
+                        <ul class="child">
+                            <li class="current"><a href="../GetUserInfo.php">个人信息</a></li>
+                            <li><a href="../Usermain.html">个人主页</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">新书推荐</a>
+                        <ul class="child">
+                            <li><a href="FullIntroduce.php">新书详述</a></li>
+                            <li><a href="index.html">推荐主页</a></li>
+                            <li><a href="PublisherIntroduce.php">出版社介绍</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">作者主页</a>
+                        <ul class="child">
+                            <li><a href="https://github.com/Nevertorlate">概览</a></li>
+                            <li><a href="https://github.com/Nevertorlate?tab=repositories">个人项目</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+					<li class="parent"><a href="contact.html">联系我们</a></li>
+
+                </ul>
+                <!-- End Dropdown Menu -->
+
+                <!-- Start Social -->
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="images/social/twitter_off.png" alt="Twitter" title="Twitter" /></a></li>
+                        <li><a href="#"><img src="images/social/facebook_off.png" alt="Facebook" title="Facebook" /></a></li>   
+                        <li><a href="#"><img src="images/social/vimeo_off.png" alt="Vimeo" title="Vimeo" /></a></li>
+                        <li><a href="#"><img src="images/social/flickr_off.png" alt="Flickr" title="Flickr" /></a></li>
+                    </ul>
+                </div>
+                <!-- End Social -->
+
+            </div>
+            <!-- End Top Menu -->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="horizon-line"></div>  
+    <div class="header-shadow"></div>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div id="content">
+
+        <!-- Start Topbar -->
+        <div class="topbar">
+            <div class="left"><h1>New / <em>New Book Display</em></h1></div>
+
+            <!-- Start Portfolio Categories -->
+            <div class="right">
+                <ul id="filter-list">
+                    <li class="list-item current"><a href="#" id="all">All Works</a></li>
+                    <li class="list-item"><a href="#" id="brand">Brand Identity</a></li>
+                    <li class="list-item"><a href="#" id="graphic">Graphic Design</a></li>
+                    <li class="list-item"><a href="#" id="photo">Photography</a></li>
+                    <li class="list-item"><a href="#" id="web">Web Design</a></li>
+                </ul>
+            </div>
+            <!-- End Portfolio Categories -->
+
+        </div>
+        <!-- End Topbar -->
+
+        <!-- Start Portfolio -->
+        <div class="fullwidth">
+            <div class="complex one">
+
+            <!-- Start Full Description Portfolio -->
+            <ul id="filter" class="image-grid one-column mosaic-large">
+
+				<?php
+					echo $_SESSION['out_FullIntroduce'];
+				?>
+
+            </ul>
+            <?php
+            	echo $_SESSION['out_FullPage'];
+            ?>
+            <!-- End Full Description Portfolio -->
+
+            </div>
+        </div>
+        <!-- End Portfolio -->
+
+    <div class="horizon-line"></div>
+    </div>
+    <!-- End Content -->
+
+</div>
+<!-- End Wrapper -->
+
+
+
+
+
+
+
+
+
+
+<!-- Start Footer -->
+<div id="footer">
+    
+    <div class="footer-shadow"></div>
+    <div class="horizon-line"></div>
+
+    <!-- Start Footer Blocks -->
+    <div class="footer-bg">
+    <div class="into-footer">
+
+        <!-- Start Recent Posts -->
+        <div class="recent-posts left">
+
+            <div class="footer-title"><h3>同济要闻</h3></div>
+
+            <div class="footer-block">
+
+                <!-- Start Recent Posts 1 -->
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69630.htm"><img src="images/content/blog/blog_thumb_1.jpg" alt="Vestibulum adipiscing commodo via tellus volutpat" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69630.htm">聚焦“心理育人”，同济心理文化月拉开帷幕</a></h4>
+                    <span class="info">May 8, 2019 | 12 comments</span>
+                </div>
+                <!-- End Recent Posts 1 -->
+
+                <div class="imagebox">
+                    <a href="blog_post.html"><img src="images/content/blog/blog_thumb_2.jpg" alt="Pellentesque magna luctus maecenas" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="blog_post.html">同济学子作品亮相2019年校“五月科技节”</a></h4>
+                    <span class="info">May 7, 2019 | 4 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69586.htm"><img src="images/content/blog/blog_thumb_3.jpg" alt="Euismod vitae viverra quis eu massa condimentum" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69586.htm">同济李昂当选“2018上海大学生年度人物”</a></h4>
+                    <span class="info">May 5, 2019 | 23 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69580.htm"><img src="images/content/blog/blog_thumb_4.jpg" alt="Quisque gravida aliquet sapien" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69580.htm">纪念五四，师生共话数学人使命担当</a></h4>
+                    <span class="info">May 4, 2019 | 10 comments</span>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Recent Posts -->
+
+        <!-- Start Get in Touch -->
+        <div class="get-in-touch right">
+
+            <div class="footer-title"><h3>与我们联系：</h3></div>
+
+            <div class="footer-block">
+                <span class="location">上海市嘉定区曹安公路4800号</span>
+                <span class="phone">0791-15879036879</span>
+                <span class="email">2458048592@qq.com</span>
+            </div>
+        </div>
+        <!-- End Get in Touch -->
+
+    </div>
+    </div>
+    <!-- End Footer Blocks -->
+
+    <!-- Start Bottom Panel -->
+    <div id="bottom">
+        <div class="into-bottom">
+            <span class="left">Tongji 涂远鹏 &copy; 2019. All Rights Reserved.</span>            <div class="backtop" id="toTop" title="Back to Top"></div>
+        </div>
+    </div>
+    <!-- End Bottom Panel -->
+
+</div>
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Casework | Design Studio</title>
+<meta name="robots" content="index, follow" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!-- Basic CSS Style (other styles are included in this file) -->
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" />
+<![endif]-->
+
+<!-- JavaScript Files -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- Start Wrapper -->
+<div id="wrapper">
+
+    <!-- Start Header -->
+    <div class="top-header"></div>
+
+    <div id="header">
+        <div class="into-header">
+
+            <!-- Start Logo -->
+            <div class="logo">
+                <a href="index-2.html"><img src="images/logo.png" alt="Casework | Design Studio" title="Casework | Design Studio" /></a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Start Top Menu -->
+            <div class="topmenu">
+
+                <!-- Start Dropdown Menu -->
+                <ul id="menu" class="menu-nav">
+
+                    <li class="parent current"><a href="../Usermain.html">图书主页</a>
+                        <ul class="child">
+                            <li class="current"><a href="../GetUserInfo.php">个人信息</a></li>
+                            <li><a href="../Usermain.html">个人主页</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">新书推荐</a>
+                        <ul class="child">
+                            <li><a href="FullIntroduce.php">新书详述</a></li>
+                            <li><a href="index.html">推荐主页</a></li>
+                            <li><a href="PublisherIntroduce.php">出版社介绍</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">作者主页</a>
+                        <ul class="child">
+                            <li><a href="https://github.com/Nevertorlate">概览</a></li>
+                            <li><a href="https://github.com/Nevertorlate?tab=repositories">个人项目</a></li>
+                        </ul>
+                    </li>
+					<li class="parent"><a href="contact.html">联系我们</a></li>
+
+                </ul>
+                <!-- End Dropdown Menu -->
+
+                <!-- Start Social -->
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="images/social/twitter_off.png" alt="Twitter" title="Twitter" /></a></li>
+                        <li><a href="#"><img src="images/social/facebook_off.png" alt="Facebook" title="Facebook" /></a></li>   
+                        <li><a href="#"><img src="images/social/vimeo_off.png" alt="Vimeo" title="Vimeo" /></a></li>
+                        <li><a href="#"><img src="images/social/flickr_off.png" alt="Flickr" title="Flickr" /></a></li>
+                    </ul>
+                </div>
+                <!-- End Social -->
+
+            </div>
+            <!-- End Top Menu -->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="horizon-line"></div>  
+    <div class="header-shadow"></div>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div id="content">
+
+        <!-- Start Topbar -->
+        <div class="topbar">
+            <h1>Introduce / <em>Publisher</em></h1>
+        </div>
+        <!-- End Topbar -->
+
+        <!-- Start Blog -->
+        <div class="sidebars three-fourth-divider">
+
+            <!-- Start Blog List (left side) --> 
+            <div class="sidebar three-fourth-seg rollover left">
+
+				<?php
+					echo $_SESSION['out_PublisherNew'];
+				?>
+<!--                 Start Blog Post 1 -->
+
+            </div>
+            
+            
+            
+            
+            
+            <!-- End Blog List (left side) -->
+
+            <!-- Start Right Sidebar -->
+            <div class="sidebar one-fourth-seg right">
+
+            <div class="corner-shadow right-one-fourth"></div>
+
+                <!-- Start Search Form -->
+                <div class="blog-search">
+                    <form id="search" method="post" action="#">
+                        <fieldset>
+                        <input class="search-field" type="text" name="search_string" id="search_string" value="Search in Blog" onfocus="if (this.value == 'Search in Blog') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search in Blog';}" />
+                        <div class="search-button"><a href="#" onclick="this.blur(); return false;" class="blue-button" title="Click to Search"><img src="images/search_icon.png" alt="Search" /></a></div>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- End Search Form -->
+
+                <!-- Start Blog Categories -->
+                <div class="title right-pos"><h2>Blog Categories</h2></div>
+
+                <div class="blog-categories">
+                    <ul>
+                        <li><a href="#">Photography / <span>9</span></a></li>
+                        <li><a href="#">Arts &amp; Crafts / <span>12</span></a></li>
+                        <li><a href="#">Typography / <span>15</span></a></li>
+                        <li><a href="#">Web Design / <span>34</span></a></li>
+                        <li><a href="#">Branding / <span>27</span></a></li>
+                        <li><a href="#">Graphic Design / <span>6</span></a></li>
+                        <li class="noline"><a href="#">Creativity / <span>11</span></a></li>
+                        <li class="noline"><a href="#">Miscellaneous / <span>20</span></a></li>
+                    </ul>
+                </div>
+                <!-- End Blog Categories -->
+
+                <!-- Start Popular Posts -->
+                <div class="title right-pos"><h2>Popular Posts</h2></div>
+
+                <div class="blog-popular">
+                    <ul class="arrow">
+                        <li><a href="#">Vestibulum adipiscing commodo tellus volutpat</a></li>
+                        <li><a href="#">Pellentesque magna luctus maecenas</a></li>
+                        <li><a href="#">Euismod vitae viverra quis eu massa condimentum</a></li>
+                        <li><a href="#">Quisque gravida aliquet sapien</a></li>
+                    </ul>
+                </div>
+                <!-- End Popular Posts -->
+
+                <!-- Start Archive Records -->
+                <div class="title right-pos"><h2>Archive Records</h2></div>
+
+                <div class="blog-archive">
+                    <ul class="bullet">
+                        <li><a href="#">April 2012 / <span>6</span></a></li>
+                        <li><a href="#">March 2012 / <span>17</span></a></li>
+                        <li><a href="#">February 2012 / <span>22</span></a></li>
+                        <li><a href="#">January 2012 / <span>18</span></a></li>
+                        <li><a href="#">December 2011 / <span>6</span></a></li>
+                        <li><a href="#">November 2011 / <span>31</span></a></li>
+                    </ul>
+                </div>
+                <!-- End Archive Records -->
+
+                <!-- Start Photostream -->
+                <div class="title right-pos"><h2>Photostream</h2></div>
+
+                <div class="blog-flickr rollover">
+                    <ul>
+                        <li class="imagebox"><a href="http://www.flickr.com/photos/kvh/3117621085/" rel="external"><img src="images/content/blog/flickr_thumb_1.jpg" alt="" /></a></li>
+                        <li class="imagebox"><a href="http://www.flickr.com/photos/fontfont/4830134044/" rel="external"><img src="images/content/blog/flickr_thumb_2.jpg" alt="" /></a></li>
+                        <li class="imagebox"><a href="http://www.flickr.com/photos/opensourceway/4371000486/" rel="external"><img src="images/content/blog/flickr_thumb_3.jpg" alt="" /></a></li>
+                        <li class="imagebox"><a href="http://www.flickr.com/photos/zooboing/4599739763/" rel="external"><img src="images/content/blog/flickr_thumb_4.jpg" alt="" /></a></li>
+                        <li class="imagebox"><a href="http://www.flickr.com/photos/djsoundwav/5530936933/" rel="external"><img src="images/content/blog/flickr_thumb_5.jpg" alt="" /></a></li>
+                        <li class="imagebox"><a href="http://www.flickr.com/photos/ollieolarte/3210096256/" rel="external"><img src="images/content/blog/flickr_thumb_6.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <!-- End Photostream -->
+
+            </div>
+            <!-- End Right Sidebar --> 
+
+        <div class="clear"></div>
+        </div>
+        <!-- End Blog -->
+
+    <div class="horizon-line"></div>
+    </div>
+    <!-- End Content -->
+
+</div>
+<!-- End Wrapper -->
+
+<!-- Start Footer -->
+<div id="footer">
+    
+    <div class="footer-shadow"></div>
+    <div class="horizon-line"></div>
+
+    <!-- Start Footer Blocks -->
+    <div class="footer-bg">
+    <div class="into-footer">
+
+        <!-- Start Recent Posts -->
+        <div class="recent-posts left">
+
+            <div class="footer-title"><h3>同济要闻</h3></div>
+
+            <div class="footer-block">
+
+                <!-- Start Recent Posts 1 -->
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69630.htm"><img src="images/content/blog/blog_thumb_1.jpg" alt="Vestibulum adipiscing commodo via tellus volutpat" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69630.htm">聚焦“心理育人”，同济心理文化月拉开帷幕</a></h4>
+                    <span class="info">May 8, 2019 | 12 comments</span>
+                </div>
+                <!-- End Recent Posts 1 -->
+
+                <div class="imagebox">
+                    <a href="blog_post.html"><img src="images/content/blog/blog_thumb_2.jpg" alt="Pellentesque magna luctus maecenas" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="blog_post.html">同济学子作品亮相2019年校“五月科技节”</a></h4>
+                    <span class="info">May 7, 2019 | 4 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69586.htm"><img src="images/content/blog/blog_thumb_3.jpg" alt="Euismod vitae viverra quis eu massa condimentum" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69586.htm">同济李昂当选“2018上海大学生年度人物”</a></h4>
+                    <span class="info">May 5, 2019 | 23 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="https://news.tongji.edu.cn/info/1002/69580.htm"><img src="images/content/blog/blog_thumb_4.jpg" alt="Quisque gravida aliquet sapien" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="https://news.tongji.edu.cn/info/1002/69580.htm">纪念五四，师生共话数学人使命担当</a></h4>
+                    <span class="info">May 4, 2019 | 10 comments</span>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Recent Posts -->
+
+        <!-- Start Get in Touch -->
+        <div class="get-in-touch right">
+
+            <div class="footer-title"><h3>与我们联系：</h3></div>
+
+            <div class="footer-block">
+                <span class="location">上海市嘉定区曹安公路4800号</span>
+                <span class="phone">0791-15879036879</span>
+                <span class="email">2458048592@qq.com</span>
+            </div>
+        </div>
+        <!-- End Get in Touch -->
+
+    </div>
+    </div>
+    <!-- End Footer Blocks -->
+
+    <!-- Start Bottom Panel -->
+    <div id="bottom">
+        <div class="into-bottom">
+            <span class="left">Tongji 涂远鹏 &copy; 2019. All Rights Reserved.</span>            <div class="backtop" id="toTop" title="Back to Top"></div>
+        </div>
+    </div>
+    <!-- End Bottom Panel -->
+
+</div>
+<!-- End Footer -->
+
+
+
+
+
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

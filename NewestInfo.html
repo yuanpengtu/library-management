@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+<title>公告栏</title>
+
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
+
+<!-- Custom-Stylesheet-Links -->
+<!-- Bootstrap-Core-CSS --> <link rel="stylesheet"	href="css/NewestInfo/bootstrap.min.css" 		type="text/css" media="all">
+<!-- Index-Page-CSS --> 	<link rel="stylesheet"	href="css/NewestInfo/style.css" 				type="text/css" media="all">
+<!-- Tabs-CSS --> 			<link rel="stylesheet" 	href="css/NewestInfo/easy-responsive-tabs.css" type="text/css" media="all">
+<!-- Gallery-CSS --> 		<link rel="stylesheet" 	href="css/NewestInfo/swipebox.css"				type="text/css" media="all">
+<!-- //Custom-Stylesheet-Links -->
+
+<!-- Fonts -->
+<!-- Navbar-Font --> <link rel='stylesheet'	href='http://fonts.useso.com/css?family=Montserrat:400,700'		   type='text/css'>
+<!-- Logo-Font --> 	 <link rel='stylesheet' href='http://fonts.useso.com/css?family=Fredericka+the+Great' 	   type='text/css'>
+<!-- Body-Font --> 	 <link rel='stylesheet' href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700' type='text/css'>
+<!-- //Fonts -->
+
+<!-- 设置分页符水平居中style -->
+<style> 
+body{ text-align:center} 
+.div5{ margin:0 auto; width:400px; height:100px; border:1px solid #F00} 
+</style>
+<!-- 设置分页符水平居中style -->
+
+
+
+
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+
+
+
+	<!-- 顶端导航栏 -->
+	<link href="css/Usermain/main.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/Usermain/guide/jquery.min.js"></script>
+	<script type="text/javascript" src="js/Usermain/guide/work.js"></script>
+	<!-- 顶端导航栏 -->
+	
+	
+	
+	<!--右侧导航栏文件 -->
+	<link rel="stylesheet" href="css/Usermain/style.css" type="text/css" />
+	<script src="js/Usermain/jquery-2.0.3.min.js" type="text/javascript"></script>	
+	<script type="text/javascript">
+	$(document).ready(function(){
+	
+		$(".side ul li").hover(function(){
+			$(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})	
+		},function(){
+			$(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})	
+		});
+		
+	});
+	//回到顶部
+	function goTop(){
+		$('html,body').animate({'scrollTop':0},600);
+	}
+	</script>
+	<!--右侧导航栏文件 -->
+	
+	
+	
+	
+	
+	<!-- 小人 -->
+	<script type="text/javascript" src="js/FloatPerson/jquery.min.js"></script>
+	<script type="text/javascript" src="js/FloatPerson/spig.js"></script>
+	<link rel="stylesheet" href="css/FloatPerson_spigPet.css" type="text/css"/>
+	<script type="text/javascript">
+	var isindex = true;
+	var visitor = true;
+	</script>
+	<!-- 小人 -->
+	
+	
+	
+	<!-- 设置公告title轮播 -->
+	<style type="text/css">
+        ul {
+            padding-right: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+            margin: 0px;
+            padding-top: 0px
+        }
+    </style>
+    <!-- 设置公告title轮播 -->
+<body>
+
+
+
+
+	<div class="navbg">
+ 		 <div class="col960">
+    		<ul id="navul" class="cl">
+      		<li class="navhome"><a href="http://sc.chinaz.com" target="_blank"></a></li>
+      		<li><a href="Tablelist/index.html" title="书目检索">书目检索</a>
+        		<ul><li><a href="SearchHigh.php" title="高级检索">高级检索</a></li></ul>
+      		</li>
+      		<li><a href="http://webpac.lib.tongji.edu.cn/browse/cls_browsing.php" title="分类浏览">分类浏览</a>
+        	<ul>
+          		<li><a href="http://webpac.lib.tongji.edu.cn/browse/cls_browsing.php" title="分类浏览">分类浏览</a></li></ul>
+      		</li>
+      		<li>
+      			<a href="http://www.lib.tongji.edu.cn/guideforfresh/" title="新生指南">新生指南</a>
+        	<ul>
+          		<li><a href="http://webpac.lib.tongji.edu.cn/top/top_lend.php" title="推荐书目">热门推荐</a></li>
+        	</ul>
+      		</li>
+      			<li><a href="NewBookDisplay.php" title="新书通报">新书通报</a>
+        	<ul>
+         		<li><a href="NewBookDisplay.php" title="新书通报">新书通报</a></li>
+       		</ul>
+		    </li>
+		      	<li><a href="http://www.lib.tongji.edu.cn/tjwk/" title="同济文库">同济文库</a>
+		    <ul>
+		        <li><a href="http://www.lib.tongji.edu.cn/tjwk/" title="同济文库">同济文库</a></li>
+		    </ul>
+		    </li>
+		     	<li><a href="http://www.lib.tongji.edu.cn/index.php?classid=11965" title="官方主页">官方主页</a>
+		    <ul>
+		        <li><a href="http://www.lib.tongji.edu.cn/index.php?classid=11965" title="官方主页">官方主页</a></li>
+		    </ul>
+		    </li>
+		        <li><a href="NewestInfo.php" title="信息发布">信息发布</a>
+		    <ul>
+		        <li><a href="NewestInfo.php" title="最新信息">最新信息</a></li>
+		    </ul>
+		    </li>
+		    	<li><a href="Usermain.html" title="我的图书馆">我的图书馆</a>
+		    <ul>
+		   	    <li><a href="GetUserInfo.php" title="个人信息">个人信息</a></li>
+		    </ul>
+		    </li>
+		    </ul>
+		 </div>
+	</div>
+
+
+
+
+
+<!-- Header -->
+<div class="header agileits w3layouts">
+
+	<div class="col-md-5 agileits w3layouts header-right">
+
+		<div class="navigation agileits w3layouts">
+			<!-- Navbar -->
+			<nav class="navbar agileits w3layouts navbar-default">
+				<div class="container-fluid">
+
+					<div class="navbar-header agileits w3layouts">
+						<button type="button" class="navbar-toggle agileits w3layouts collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+							<span class="sr-only agileits w3layouts">Toggle navigation</span>
+							<span class="icon-bar agileits w3layouts"></span>
+							<span class="icon-bar agileits w3layouts"></span>
+							<span class="icon-bar agileits w3layouts"></span>
+						</button>
+					</div>
+
+					<div class="navbar-collapse agileits w3layouts collapse hover-effect" id="navbar">
+						<ul class="agileits w3layouts">
+							<li class="agileits w3layouts"><a href="#about">热门公告</a></li>
+							<li class="agileits w3layouts"><a href="#team">全部公告</a></li>
+							<li class="agileits w3layouts"><a href="#gallery">风景图片</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+			<!-- //Navbar -->
+		</div>
+
+		<div class="logo agileits w3layouts">
+			<h1 class="agileits w3layouts"><a href="#">CAPTURE</a></h1>
+			<img src="images/NewestInfo/logo-style.png" alt="agileits w3layouts">
+		</div>
+
+		<div class="header-info agileits w3layouts">
+			<p>读书无嗜好，就能尽其多。不先泛览群书，则会无所适从或失之偏好，广然后深，博然后专。　——鲁迅</p>
+		</div>
+
+		<!-- Social-Icons -->
+		<div class="social agileits w3layouts">
+			<ul class="social-icons agileits w3layouts">
+				<li class="agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></li>
+				<li class="agileits w3layouts"><a href="#" class="agileits w3layouts twitter" title="Go to Our Twitter Account"></a></li>
+				<li class="agileits w3layouts"><a href="#" class="agileits w3layouts googleplus" title="Go to Our Google Plus Account"></a></li>
+				<li class="agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></li>
+				<li class="agileits w3layouts"><a href="#" class="agileits w3layouts youtube" title="Go to Our Youtube Channel"></a></li>
+			</ul>
+		</div>
+		<!-- //Social-Icons -->
+		<div class="clearfix"></div>
+
+	</div>
+
+	<div class="col-md-7 agileits w3layouts header-left">
+
+		<div class="header-slider agileits w3layouts">
+			<div class="slider-1 agileits w3layouts">
+				<!-- Slider -->
+				<div class="slider agileits w3layouts">
+					<ul class="rslides agileits w3layouts" id="slider1">
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-1.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-2.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-3.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-4.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-5.jpg" alt="agileits w3layouts">
+						</li>
+					</ul>
+				</div>
+				<!-- //Slider -->
+			</div>
+			<div class="slider-2 agileits w3layouts">
+				<!-- Slider -->
+				<div class="slider agileits w3layouts">
+					<ul class="rslides agileits w3layouts" id="slider2">
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-6.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-7.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-8.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-9.jpg" alt="agileits w3layouts">
+						</li>
+						<li class="agileits w3layouts">
+							<img src="images/NewestInfo/slide-10.jpg" alt="agileits w3layouts">
+						</li>
+					</ul>
+				</div>
+				<!-- //Slider -->
+			</div>
+		</div>
+
+	</div>
+	<div class="clearfix"></div>
+
+</div>
+<!-- //Header -->
+
+
+
+<!-- About -->
+<div class="about agileits w3layouts" id="about">
+	<h2>公告信息</h2>
+	<div style="background:#ADD8E6;color:#fff;border-radius: 8px;width: 600px;margin: 100px auto;">
+	    <div id="scrollBody" style="height: 50px;line-height:50px;overflow-y:hidden;margin-left: 30px;text-align: center;">
+	        <ul style="list-style: none;">
+	        <?php
+	        echo $_SESSION['title_info'];
+	        ?>
+	        </ul>
+	        <br>
+	    </div>
+	    <img src="images/NewestInfo/up.png" style="position: relative;width: 20px;float: left;top: -25px;left: 10px;" />
+	</div>
+	<div>
+	<?php
+	echo $_SESSION['title_detail_info'];
+	?>
+	</div>
+	
+<!-- 	<div class="about-grid1 agileits w3layouts"> -->
+<!-- 		<div class="col-md-6 col-sm-6 agileits w3layouts about-grid about-info"> -->
+<!-- 			<h3>Voluptatelit</h3> -->
+<!-- 			<p>Etiam sit amet nunc nec magna accumsan ultricies eget a leo. Praesent nec libero aliquet, malesuada nibh et, tincidunt arcu. Aenean porta faucibus nisl. Fusce ultrices nec purus eget consequat. Phasellus pharetra dignissim lacus id rhoncus in nunc nec magna accumsan ultricies eget a leo. Praesent nec libero aliquet, malesuada nibh et, tincidunt arcu. Aenean porta faucibus nisl. Fusce ultrices malesuada.</p> -->
+<!-- 		</div> -->
+<!-- 		<div class="col-md-6 col-sm-6 agileits w3layouts about-grid about-image"> -->
+<!-- 			<img src="images/NewestInfo/about-1.jpg" alt="agileits w3layouts"> -->
+<!-- 		</div> -->
+<!-- 		<div class="clearfix"></div> -->
+<!-- 	</div> -->
+
+<!-- 	<div class="about-grid2 agileits w3layouts"> -->
+<!-- 		<div class="col-md-6 col-sm-6 agileits w3layouts about-grid about-image"> -->
+<!-- 			<img src="images/NewestInfo/about-2.jpg" alt="agileits w3layouts"> -->
+<!-- 		</div> -->
+<!-- 		<div class="col-md-6 col-sm-6 agileits w3layouts about-grid about-info"> -->
+<!-- 			<h3>Reprehenderit</h3> -->
+<!-- 			<p>Etiam sit amet nunc nec magna accumsan ultricies eget a leo. Praesent nec libero aliquet, malesuada nibh et, tincidunt arcu. Aenean porta faucibus nisl. Fusce ultrices nec purus eget consequat. Phasellus pharetra dignissim lacus id rhoncus in nunc nec magna accumsan ultricies eget a leo. Praesent nec libero aliquet, malesuada nibh et, tincidunt arcu. Aenean porta faucibus nisl. Fusce ultrices malesuada.</p> -->
+<!-- 		</div> -->
+<!-- 		<div class="clearfix"></div> -->
+<!-- 	</div> -->
+
+<!-- 	<div class="about-grid3 agileits w3layouts"> -->
+<!-- 		<div class="col-md-6 col-sm-6 agileits w3layouts about-grid about-info"> -->
+<!-- 			<h3>Exercitation</h3> -->
+<!-- 			<p>Etiam sit amet nunc nec magna accumsan ultricies eget a leo. Praesent nec libero aliquet, malesuada nibh et, tincidunt arcu. Aenean porta faucibus nisl. Fusce ultrices nec purus eget consequat. Phasellus pharetra dignissim lacus id rhoncus in nunc nec magna accumsan ultricies eget a leo. Praesent nec libero aliquet, malesuada nibh et, tincidunt arcu. Aenean porta faucibus nisl. Fusce ultrices malesuada.</p> -->
+<!-- 		</div> -->
+<!-- 		<div class="col-md-6 agileits w3layouts col-sm-6 about-grid about-image"> -->
+<!-- 			<img src="images/NewestInfo/about-3.jpg" alt="agileits w3layouts"> -->
+<!-- 		</div> -->
+<!-- 		<div class="clearfix"></div> -->
+<!-- 	</div> -->
+	
+	
+
+</div>
+<!-- //About -->
+
+
+
+<!-- People -->
+<div class="people agileits w3layouts">
+	<div class="container">
+
+		<!-- Team -->
+		<div class="col-md-6 agileits w3layouts client-slider-1" id="team">
+
+			<h3>Team</h3>
+
+			<!-- Slider -->
+			<div class="slider agileits w3layouts">
+				<ul class="rslides agileits w3layouts" id="slider3">
+					<li class="agileits w3layouts">
+						<figure class="effect-dexter agileits w3layouts">
+							<img src="images/NewestInfo/team-1.jpg" alt="agileits w3layouts">
+							<figcaption>
+								<h4>BRUCE <span> WAYNE</span></h4>
+								<div class="social-two agileits w3layouts">
+									<span class="icon agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></span>
+								<div>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="agileits w3layouts">
+						<figure class="effect-dexter agileits w3layouts">
+							<img src="images/NewestInfo/team-2.jpg" alt="agileits w3layouts">
+							<figcaption>
+								<h4>HARRY <span> ENFEILD</span></h4>
+								<div class="social-two agileits w3layouts">
+									<span class="icon agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></span>
+								<div>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="agileits w3layouts">
+						<figure class="effect-dexter agileits w3layouts">
+							<img src="images/NewestInfo/team-3.jpg" alt="agileits w3layouts">
+							<figcaption>
+								<h4>MIA <span> ROBERTS</span></h4>
+								<div class="social-two agileits w3layouts">
+									<span class="icon agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></span>
+								<div>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="agileits w3layouts">
+						<figure class="effect-dexter agileits w3layouts">
+							<img src="images/NewestInfo/team-4.jpg" alt="agileits w3layouts">
+							<figcaption>
+								<h4>CYNTHIA <span> WILLIAMS</span></h4>
+								<div class="social-two agileits w3layouts">
+									<span class="icon agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></span>
+								<div>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="agileits w3layouts">
+						<figure class="effect-dexter agileits w3layouts">
+							<img src="images/NewestInfo/team-5.jpg" alt="Capture">
+							<figcaption>
+								<h4>RONALD <span> HARRISON</span></h4>
+								<div class="social-two agileits w3layouts">
+									<span class="icon agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></span>
+								<div>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="agileits w3layouts">
+						<figure class="effect-dexter agileits w3layouts">
+							<img src="images/NewestInfo/team-6.jpg" alt="Capture">
+							<figcaption>
+								<h4>JOHN <span> MALCOVICH</span></h4>
+								<div class="social-two agileits w3layouts">
+									<span class="icon agileits w3layouts"><a href="#" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="twitter agileits w3layouts" title="Go to Our Twitter Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="googleplus agileits w3layouts" title="Go to Our Google Plus Account"></a></span>
+									<span class="icon agileits w3layouts"><a href="#" class="instagram agileits w3layouts" title="Go to Our Instagram Account"></a></span>
+								<div>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</div>
+			<!-- //Slider -->
+		</div>
+		<!-- //Team -->
+
+
+
+		<!-- Clients -->
+		<div class="col-md-6 agileits w3layouts client-slider-2">
+
+			<h3>阅读小贴士</h3>
+			<!-- Slider -->
+			<div class="slider agileits w3layouts">
+				<ul class="rslides agileits w3layouts" id="slider4">
+					<li class="agileits w3layouts">
+						<h4>鲁迅爱书</h4>
+						<p>少年时代的鲁迅，每天从三味书屋放学回家，吃完晚饭后，先把桌子擦抹干净，把手洗干净，然后拿出书来，一页一页翻着阅读。一本绘图的《山海经》，他不仅反复阅读，而且把书上的画全部临摹下来。鲁迅13岁那年，因他祖父科场案发，他曾一度在大舅父的岳父秦秋伊家中避难。秦家有丰富的藏书。在半年多的逃难生活中，鲁迅如饥似渴地阅读了秦家的大量书籍，尤其是像《红楼梦》等著名的古典绣像小说。</p>
+						<div class="client agileits w3layouts">
+							<span>读书应自己思索，自己做主。</span>
+							<br>
+							<span>----鲁迅</span>
+						</div>
+					</li>
+					<li class="agileits w3layouts">
+						<h4>侯宝林抄书</h4>
+						<p>相声语言大师侯宝林只上过三年小学，由于他勤奋好学，使他的艺术水平达到了炉火纯青的程度，成为有名的语言专家。有一次，他为了买到自己想买的一部明代笑话书《谑浪》，跑遍了北京城所有的旧书摊也未能如愿。后来，他得知北京图书馆有这部书，就决定把书抄回来。适值冬日，他顶着狂风，冒着大雪，一连十八天都跑到图书馆里去抄书，一部十多万字的书，终于被他抄录到手。</p>
+						<div class="client agileits w3layouts">
+							<span>不读书的人思想就会停止</span>
+							<br>
+							<span>----侯宝林</span>
+						</div>
+					</li>
+					<li class="agileits w3layouts">
+						<h4>王亚南苦读成才</h4>
+						<p>亚南小时候胸有大志，酷爱读书。他在读中学时，为了争取更多的时间读书，特意把自己睡的木板床的一条脚锯短半尺，成为三脚床。每天读到深夜，疲劳时上床去睡一觉后迷糊中一翻身，床向短脚方向倾斜过去，他一下子被惊醒过来，便立刻下床，伏案夜读。天天如此，从未间断。结果他年年都取得优异的成绩，被誉为班内的三杰之一。他由于少年时勤奋刻苦读书，后来，终于成为我国杰出的经济学家。</p>
+						<div class="client agileits w3layouts">
+							<span>劳于读书，逸于作文。</span>
+							<br>
+							<span>----王亚南</span>
+						</div>
+					</li>
+					<li class="agileits w3layouts">
+						<h4>张广厚吃书</h4>
+						<p>数学家张广厚有一次看到了一篇关于亏值的论文，觉得对自己的研究工作有用处，就一遍又一遍地反复阅读。这篇论文共20多页，他反反复复地念了半年多。因为经常的反复翻摸，洁白的书页上，留下一条明显的黑印。他的妻子对他开玩笑说，这哪叫念书啊，简直是吃书。</p>
+						<div class="client agileits w3layouts">
+							<span> </span>
+							<br>
+							<span>Cars Dealer</span>
+						</div>
+					</li>
+					<li class="agileits w3layouts">
+						<h4>高尔基救书</h4>
+						<p>世界文豪高尔基对书感情独深，爱书如命。有一次，他的房间失火了，他首先抱起的是书籍，其它的任何东西他都不考虑。为了抢救书籍，他险些被烧死。他说：“书籍一面启示着我的智慧和心灵，一面帮助我在一片烂泥塘里站起来，如果不是书籍的话，我就沉没在这片泥塘里，我就要被愚蠢和下流淹死。”</p>
+						<div class="client agileits w3layouts">
+							<span>读书何所求?将以通事理。</span>
+							<br>
+							<span>----高尔基</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- //Slider -->
+		</div>
+		<!-- //Clients -->
+
+		<div class="clearfix"></div>
+
+	</div>
+</div>
+<!-- //People -->
+
+
+
+
+
+<!-- Gallery -->
+<div class="gallery agileits w3layouts" id="gallery">
+		<h3>Gallery</h3>
+		<div class="col-md-2 col-sm-2 agileits w3layouts gal-left">
+			<div class="content-grid-effect agileits w3layouts slow-zoom vertical text-center">
+				<a href="images/NewestInfo/gallery-1.jpg" class="b-link-stripe agileits w3layouts b-animate-go swipebox">
+					<div class="img-box agileits w3layouts">
+						<img src="images/NewestInfo/gallery-1.jpg" alt="image" class="img-responsive agileits w3layouts zoom-img">
+					</div>
+					<div class="info-box agileits w3layouts">
+						<div class="info-content agileits w3layouts">
+							<span class="separator agileits w3layouts"></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-2 col-sm-2 agileits w3layouts gal-left">
+			<div class="content-grid-effect agileits w3layouts slow-zoom vertical text-center">
+				<a href="images/NewestInfo/gallery-2.jpg" class="b-link-stripe agileits w3layouts b-animate-go swipebox">
+					<div class="img-box agileits w3layouts">
+						<img src="images/NewestInfo/gallery-2.jpg" alt="image" class="img-responsive agileits w3layouts zoom-img">
+					</div>
+					<div class="info-box agileits w3layouts">
+						<div class="info-content agileits w3layouts">
+							<span class="separator agileits w3layouts"></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-2 col-sm-2 agileits w3layouts gal-left">
+			<div class="content-grid-effect slow-zoom vertical agileits w3layouts text-center">
+				<a href="images/NewestInfo/gallery-3.jpg" class="b-link-stripe agileits w3layouts b-animate-go swipebox">
+					<div class="img-box agileits w3layouts">
+						<img src="images/NewestInfo/gallery-3.jpg" alt="image" class="img-responsive agileits w3layouts zoom-img">
+					</div>
+					<div class="info-box agileits w3layouts">
+						<div class="info-content agileits w3layouts">
+							<span class="separator agileits w3layouts"></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-2 col-sm-2 agileits w3layouts gal-left">
+			<div class="content-grid-effect slow-zoom vertical agileits w3layouts text-center">
+				<a href="images/NewestInfo/gallery-4.jpg" class="b-link-stripe agileits w3layouts b-animate-go swipebox">
+					<div class="img-box agileits w3layouts">
+						<img src="images/NewestInfo/gallery-4.jpg" alt="image" class="img-responsive agileits w3layouts zoom-img">
+					</div>
+					<div class="info-box agileits w3layouts">
+						<div class="info-content agileits w3layouts">
+							<span class="separator agileits w3layouts"></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-2 col-sm-2 agileits w3layouts gal-left">
+			<div class="content-grid-effect slow-zoom vertical agileits w3layouts text-center">
+				<a href="images/NewestInfo/gallery-5.jpg" class="b-link-stripe agileits w3layouts b-animate-go swipebox">
+					<div class="img-box agileits w3layouts">
+						<img src="images/NewestInfo/gallery-5.jpg" alt="image" class="img-responsive agileits w3layouts zoom-img">
+					</div>
+					<div class="info-box agileits w3layouts">
+						<div class="info-content agileits w3layouts">
+							<span class="separator agileits w3layouts"></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col-md-2 col-sm-2 agileits w3layouts gal-left">
+			<div class="content-grid-effect slow-zoom vertical agileits w3layouts text-center">
+				<a href="images/NewestInfo/gallery-6.jpg" class="b-link-stripe agileits w3layouts b-animate-go swipebox">
+					<div class="img-box agileits w3layouts">
+						<img src="images/NewestInfo/gallery-6.jpg" alt="image" class="img-responsive agileits w3layouts zoom-img">
+					</div>
+					<div class="info-box agileits w3layouts">
+						<div class="info-content agileits w3layouts">
+							<span class="separator agileits w3layouts"></span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+</div>
+<!-- //Gallery -->
+
+
+<!-- Footer -->
+<div class="footer agileits w3layouts">
+	<div class="container">
+		<div class="footer-top agileits w3layouts">
+			<div class="footer-bottom agileits w3layouts">
+				<div class="footer-nav agileits w3layouts">
+					<ul class="agileits w3layouts">
+						<li class="agileits w3layouts"><a class="scroll agileits w3layouts" href="#">热门公告</a></li>
+						<li class="agileits w3layouts"><a class="scroll agileits w3layouts" href="#about">全部公告</a></li>
+						<li class="agileits w3layouts"><a class="scroll agileits w3layouts" href="#gallery">图片</a></li>
+					</ul>
+				</div>
+				<div class="copyright agileits w3layouts">
+					<p>Copyright © 2019 Admin by 涂远鹏.<a target="_blank" href="https://github.com/Nevertorlate/">个人主页</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- //Footer -->
+
+
+
+<!-- Custom-JavaScript-File-Links -->
+
+	<!-- Default-JavaScript-File -->   <script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- Bootstrap-JavaScript-File --> <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- Banner-Slider-JavaScript -->
+		<script src="js/NewestInfo/responsiveslides.min.js"></script>
+		<script>
+			$(function () {
+				$("#slider1, #slider2, #slider3, #slider4").responsiveSlides({
+					auto: true,
+					nav: true,
+					speed: 800,
+					namespace: "callbacks",
+					pager: true,
+				});
+			});
+		</script>
+	<!-- //Banner-Slider-JavaScript -->
+
+	<!-- Gallery-JavaScript -->
+		<script src="js/NewestInfo/jquery.swipebox.min.js"></script> 
+			<script type="text/javascript">
+				jQuery(function($) {
+					$(".swipebox").swipebox();
+				});
+		</script>
+	<!-- //Gallery-JavaScript -->
+
+	<!-- Slide-To-Top JavaScript (No-Need-To-Change) -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var defaults = {
+					containerID: 'toTop',
+					containerHoverID: 'toTopHover',
+					scrollSpeed: 100,
+					easingType: 'linear',
+				};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<a href="#" class="agileits w3layouts" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 0;"> </span></a>
+	<!-- //Slide-To-Top JavaScript -->
+
+	<!-- Smooth-Scrolling-JavaScript -->
+		<script type="text/javascript" src="js/NewestInfo/move-top.js"></script>
+		<script type="text/javascript" src="js/NewestInfo/easing.js"></script>
+		<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll, .navbar li a, .footer li a").click(function(event){
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+		</script>
+	<!-- //Smooth-Scrolling-JavaScript -->
+
+	<!-- Vertical-Tabs-JavaScript -->
+		<script src="js/NewestInfo/easyResponsiveTabs.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#parentVerticalTab').easyResponsiveTabs({
+					type: 'vertical',
+					width: 'auto',
+					fit: true,
+					closed: 'accordion',
+					tabidentify: 'hor_1',
+					activate: function(event) {
+						var $tab = $(this);
+						var $info = $('#nested-tabInfo2');
+						var $name = $('span', $info);
+						$name.text($tab.text());
+						$info.show();
+					}
+				});
+			});
+		</script>
+	<!-- Vertical-Tabs-JavaScript -->
+
+<!-- //Custom-JavaScript-File-Links -->
+	
+	
+	
+	<!--右侧导航栏 -->
+	<div class="side">
+		<ul>
+			<li><a href="Usermain.html"><div class="sidebox"><img src="images/Usermain/guide/side_icon01.png">主页</div></a></li>
+			<li><a href="login.html"><div class="sidebox"><img src="images/Usermain/guide/side_icon02.png">注销</div></a></li>
+			<li><a href="javascript:void(0);" ><div class="sidebox"><img src="images/Usermain/guide/side_icon04.png">分享QQ</div></a></li>
+			<li><a href="javascript:void(0);" ><div class="sidebox"><img src="images/Usermain/guide/side_icon03.png">分享微博</div></a></li>
+			<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="images/Usermain/guide/side_icon05.png"></a></li>
+		</ul>
+	</div>
+	<!--右侧导航栏 -->
+    
+    
+    
+    
+    
+    
+    <!--小人只在首页显示 start*-->
+	<div id="spig" class="spig">
+	    <div id="message">正在加载中……</div>
+	    <div id="mumu" class="mumu"></div>
+	</div>
+	<!--小人end*-->
+	
+	
+	
+	
+	
+	
+	<!-- 公告轮播脚本 -->
+	<script>
+    function $(id)
+    {
+        return document.getElementById(id);
+    }
+
+    var speed = 10;
+    var delay = 1500;
+    var timeout = 0;
+    function scroll()
+    {
+        if($('scrollBody').scrollTop == $('scrollBody').scrollHeight - 50)
+        {
+            $('scrollBody').scrollTop = 0;
+            $('scrollBody').scrollTop ++ ;
+            timeout = setTimeout('scroll()', delay);
+
+        }else if ($('scrollBody').scrollTop % 50 == 0)
+        {
+            $('scrollBody').scrollTop ++ ;
+            timeout = setTimeout('scroll()', delay);
+        }else
+        {
+            $('scrollBody').scrollTop ++ ;
+            timeout = setTimeout('scroll()', speed);
+        }
+    }
+    scroll();
+	</script>
+	<!-- 公告轮播脚本 -->
+	
+	
+	
+</body>
+</html>

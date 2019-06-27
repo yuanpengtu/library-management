@@ -1,0 +1,812 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Casework | Design Studio</title>
+<meta name="robots" content="index, follow" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<!-- Basic CSS Style (other styles are included in this file) -->
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie8.css" media="all" />
+<![endif]-->
+
+<!-- JavaScript Files -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.dimensions.js"></script>
+<script type="text/javascript" src="js/jquery.tooltip.js"></script>
+<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">  
+            
+$(document).ready(function(){
+
+    // Image Overlays and Captions
+    
+    $('.zoom').mosaic({
+        opacity: 0.7
+    });
+    
+    $('.play').mosaic({
+        opacity: 0.7
+    });
+    
+    $('.link').mosaic({
+        opacity: 0.7
+    });
+    
+    $('.info').mosaic({
+        opacity: 0.7
+    });
+    
+    $('.plus').mosaic({
+        opacity: 0.7
+    });
+    
+    $('.tooltip').mosaic({
+        opacity: 0.7
+    });
+    
+    $('.fade').mosaic({
+        opacity: 0.7
+    });
+
+    if ( $.browser.msie ) {
+        $('.fade-black').mosaic({opacity: 0.7});
+        $('.fade-white').mosaic({opacity: 0.7});
+    } else {
+        $('.fade-black').mosaic();
+        $('.fade-white').mosaic();
+    }
+
+    $('.lower-panel').mosaic({
+        animation: 'slide'
+    });
+    
+    $('.upper-panel').mosaic({
+        animation: 'slide',
+        anchor_y: 'top'
+    });
+    
+    $('.lower-panel-inside').mosaic({
+        animation: 'slide',
+        hover_y: '40px'
+    });
+    
+    $('.upper-panel-inside').mosaic({
+        animation: 'slide',
+        anchor_y: 'top',
+        hover_y: '40px'
+    });
+    
+    $('.lower-panel-outside').mosaic({
+        animation: 'slide'
+    });
+    
+    $('.upper-panel-outside').mosaic({
+        animation: 'slide',
+        anchor_y: 'top'
+    });
+
+    $('.slide-forward').mosaic({
+        animation: 'slide',
+        hover_x: '428px',
+        speed: 'normal'
+    });
+    
+    $('.slide-backward').mosaic({
+        animation: 'slide',
+        hover_x: '-428px',
+        speed: 'normal'
+    });
+    
+    $('.slide-downward').mosaic({
+        animation: 'slide',
+        hover_y: '-222px',
+        speed: 'normal'
+    });
+    
+    $('.slide-upward').mosaic({
+        animation: 'slide',
+        hover_y: '222px',
+        speed: 'normal'
+    });
+    
+    $('.slide-left-top').mosaic({
+        animation: 'slide',
+        hover_x: '-428px',
+        hover_y: '222px',
+        speed: 'normal'
+    });
+    
+    $('.slide-right-top').mosaic({
+        animation: 'slide',
+        hover_x: '428px',
+        hover_y: '222px',
+        speed: 'normal'
+    });
+
+    $('.slide-left-bottom').mosaic({
+        animation: 'slide',
+        hover_x: '-428px',
+        hover_y: '-222px',
+        speed: 'normal'
+    });
+    
+    $('.slide-right-bottom').mosaic({
+        animation: 'slide',
+        hover_x: '428px',
+        hover_y: '-222px',
+        speed: 'normal'
+    });
+
+    // Image Tooltip
+    
+    //<![CDATA[
+    $(".imageTooltip a").tooltip({
+        showTitle: true,
+        track: true, 
+        bodyHandler: function() {
+            return $("<img/>").attr("src", $(this).attr("rel"));
+        }
+    });
+    //]]>
+    
+    // prettyPhoto
+    
+    $(".imagebox a[rel^='prettyPhoto']").prettyPhoto({
+        theme:'light_square', // or "dark_square" for dark style
+        animation_speed: 'fast',
+        overlay_gallery: false
+    });
+                
+});
+
+</script>
+
+</head>
+
+<body>
+
+<!-- Start Wrapper -->
+<div id="wrapper">
+
+    <!-- Start Header -->
+    <div class="top-header"></div>
+
+    <div id="header">
+        <div class="into-header">
+
+            <!-- Start Logo -->
+            <div class="logo">
+                <a href="index-2.html"><img src="images/logo.png" alt="Casework | Design Studio" title="Casework | Design Studio" /></a>
+            </div>
+            <!-- End Logo -->
+
+            <!-- Start Top Menu -->
+            <div class="topmenu">
+
+                <!-- Start Dropdown Menu -->
+                <ul id="menu" class="menu-nav">
+
+                    <li class="parent"><a href="index-2.html">Home</a>
+                        <ul class="child">
+                            <li><a href="index-2.html">With Nivo Slider</a></li>
+                            <li><a href="index_alter.html">With Thumbnail Slider</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">Portfolio</a>
+                        <ul class="child">
+                            <li><a href="portfolio_full.html">Full Description Portfolio</a></li>
+                            <li><a href="portfolio_2col.html">2-Column Portfolio</a></li>
+                            <li><a href="portfolio_3col.html">3-Column Portfolio</a></li>
+                            <li><a href="portfolio_4col.html">4-Column Portfolio</a></li>
+                            <li><a href="portfolio_nav.html">Portfolio with Pagination</a></li>
+                            <li><a href="portfolio_post.html">Portfolio Item Details</a></li>
+                            <li><a href="quick_gallery.html">Quick Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent"><a href="#">Blog</a>
+                        <ul class="child">
+                            <li><a href="blog_overview.html">Blog Overview</a></li>
+                            <li><a href="blog_post.html">Blog Post Page</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="parent current"><a href="#">Features</a>
+                        <ul class="child">
+                            <li><a href="typography_shortcodes.html">Typography &amp; Shortcodes</a></li>
+                            <li><a href="columns_pricing_table.html">Columns &amp; Pricing Table</a></li>
+                            <li><a href="javascript_additions.html">JavaScript Additions</a></li>
+                            <li><a href="#">Page Layouts</a>
+                                <ul class="grandchild">
+                                    <li><a href="right_sidebar.html">Page with Right Sidebar</a></li>
+                                    <li><a href="left_sidebar.html">Page with Left Sidebar</a></li>
+                                    <li><a href="full_width_page.html">Full Width Page</a></li>
+                                    <li><a href="half_width_page.html">Half Width Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="current"><a href="images_overview.html">Image Display Overview</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+                <!-- End Dropdown Menu -->
+
+                <!-- Start Social -->
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><img src="images/social/twitter_off.png" alt="Twitter" title="Twitter" /></a></li>
+                        <li><a href="#"><img src="images/social/facebook_off.png" alt="Facebook" title="Facebook" /></a></li>   
+                        <li><a href="#"><img src="images/social/vimeo_off.png" alt="Vimeo" title="Vimeo" /></a></li>
+                        <li><a href="#"><img src="images/social/flickr_off.png" alt="Flickr" title="Flickr" /></a></li>
+                    </ul>
+                </div>
+                <!-- End Social -->
+
+            </div>
+            <!-- End Top Menu -->
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="horizon-line"></div>  
+    <div class="header-shadow"></div>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div id="content">
+
+        <!-- Start Topbar -->
+        <div class="topbar">
+            <h1>Features / <em>Image display overview</em></h1>
+        </div>
+        <!-- End Topbar -->
+
+        <!-- Start Features -->
+        <div class="sidebars one-half-divider">
+
+            <!-- Start Left Side --> 
+            <div class="sidebar one-half-seg left">
+
+                <!-- Start Image Overlays --> 
+                <div class="title left-pos"><h2>Image Overlays</h2></div>
+
+                <div class="image-overlays mosaic-feature-overlays">
+
+                    <!-- Zoom overlay-->
+                    <div class="imagebox left">
+                        <div class="mosaic-block zoom">
+                            <a href="images/content/features/feature_image_big.jpg" class="mosaic-overlay" title="Lorem Ipsum" rel="prettyPhoto">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Play overlay -->
+                    <div class="imagebox right">    
+                        <div class="mosaic-block play">
+                            <a href="http://www.youtube.com/watch?v=5oKH8iiGVzQ" class="mosaic-overlay" title="Tick Tick Boom" rel="prettyPhoto">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Link overlay -->
+                    <div class="imagebox left"> 
+                        <div class="mosaic-block link">
+                            <a href="#" class="mosaic-overlay">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Info overlay -->
+                    <div class="imagebox right">    
+                        <div class="mosaic-block info">
+                            <a href="#" class="mosaic-overlay">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Plus overlay -->
+                    <div class="imagebox left"> 
+                        <div class="mosaic-block plus">
+                            <a href="#" class="mosaic-overlay">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Image tooltip with overlay -->
+                    <div class="imagebox imageTooltip right">  
+                        <div class="mosaic-block tooltip">
+                            <a href="#" class="mosaic-overlay" rel="images/content/features/feature_image_medium.jpg" title="Lorem Ipsum">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Fade with caption and link -->
+                    <div class="imagebox left"> 
+                        <div class="mosaic-block fade">
+                            <div class="mosaic-overlay">
+                                <div class="mosaic-details">
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>Fusce suscipit cursus</p>
+                                </div>
+                            </div>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                   <!-- Fade -->
+                    <div class="imagebox right">    
+                        <div class="mosaic-block fade">
+                            <div class="mosaic-overlay"></div>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Fade to Black -->
+                    <div class="imagebox left last">    
+                        <div class="mosaic-block fade-black">
+                            <a href="#" class="mosaic-overlay">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Fade to White -->
+                    <div class="imagebox right last">   
+                        <div class="mosaic-block fade-white">
+                            <a href="#" class="mosaic-overlay">&nbsp;</a>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Image Overlays -->
+
+                <!-- Start Floating Images -->
+                <div class="title left-pos"><h2>Floating Images</h2></div>
+
+                <div class="float-images">
+
+                    <div class="block">
+
+                        <div class="imagebox right-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <p>Proin in purus odio, purus lacinia. Aenean tincidunt a pellentesque sollicitudin. Etiam vulputate, non dictum porttitor, ipsum semper ac metus, hendrerit lectus ipsum et augue. In eu nunc diam, sit amet volutpat magna. Vivamus id nulla id urna molestie vulputate id sed ipsum. Fusce quis un dolor, auctor feugiat. Vivamus mauris, adipiscing quis venenatis convallis, lobortis eu lorem. In condimentum euismod risus sed euismod. Donec id dictum orci. Quisque fermentum tincidunt rhoncus. Sed quis ligula, sit amet egestas dui. Morbi eget metus eget sem sodales lacinia. Praesent erat lacus, accumsan volutpat interdum et, condimentum sagittis. Sed amet magna tellus sollicitudin placerat. Integer semper aliquet id mattis, in habitasse platea dictumst.</p>
+
+                    </div>
+
+                    <div class="block">
+
+                        <div class="imagebox left-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <p>Proin in purus odio, purus lacinia. Aenean tincidunt a pellentesque sollicitudin. Etiam vulputate, non dictum porttitor, ipsum semper ac metus, hendrerit lectus ipsum et augue. In eu nunc diam, sit amet volutpat magna. Vivamus id nulla id urna molestie vulputate id sed ipsum. Fusce quis un dolor, auctor feugiat. Vivamus mauris, adipiscing quis venenatis convallis, lobortis eu lorem. In condimentum euismod risus sed euismod. Donec id dictum orci. Quisque fermentum tincidunt rhoncus. Sed quis ligula, sit amet egestas dui. Morbi eget metus eget sem sodales lacinia. Praesent erat lacus, accumsan volutpat interdum et, condimentum sagittis. Sed amet magna tellus sollicitudin placerat. Integer semper aliquet id mattis, in habitasse platea dictumst.</p>
+
+                    </div>
+
+                    <div class="block">
+
+                        <div class="imagebox right-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="imagebox right-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="imagebox right-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <p>Proin in purus odio, purus lacinia. Aenean tincidunt a pellentesque sollicitudin. Etiam vulputate, non dictum porttitor, ipsum semper ac metus, hendrerit lectus ipsum et augue. In eu nunc diam, sit amet volutpat magna. Vivamus id nulla id urna molestie vulputate id sed ipsum. Fusce quis dolor, auctor feugiat. Vivamus adipiscing quis venenatis convallis, lobortis eu lorem. In condimentum euismod non risus sed euismod. Donec id dictum orci. Quisque fermentum tincidunt rhoncus. Sed ligula, sit amet egestas dui. Morbi eget in metus eget sem sodales lacinia. Praesent erat a lacus, accumsan volutpat interdum, condimentum sagittis. Sed amet magna tellus placerat. Integer semper aliquet mattis habitasse platea dictumst.</p>
+
+                    </div>
+
+                    <div class="block">
+
+                        <div class="imagebox left-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="imagebox left-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="imagebox left-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <p>Proin in purus odio, purus lacinia. Aenean tincidunt a pellentesque sollicitudin. Etiam vulputate, non dictum porttitor, ipsum semper ac metus, hendrerit lectus ipsum et augue. In eu nunc diam, sit amet volutpat magna. Vivamus id nulla id urna molestie vulputate id sed ipsum. Fusce quis dolor, auctor feugiat. Vivamus adipiscing quis venenatis convallis, lobortis eu lorem. In condimentum euismod non risus sed euismod. Donec id dictum orci. Quisque fermentum tincidunt rhoncus. Sed ligula, sit amet egestas dui. Morbi eget in metus eget sem sodales lacinia. Praesent erat a lacus, accumsan volutpat interdum, condimentum sagittis. Sed amet magna tellus placerat. Integer semper aliquet mattis habitasse platea dictumst.</p>
+
+                    </div>
+
+                    <div class="block">
+
+                        <div class="imagebox left-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="imagebox left">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <p>Proin in purus odio, purus lacinia. Aenean tincidunt a pellentesque sollicitudin. Etiam vulputate, non dictum porttitor, ipsum semper ac metus, hendrerit lectus ipsum et augue. In eu nunc diam, sit amet volutpat magna. Vivamus id nulla id urna molestie vulputate id sed ipsum. Fusce quis dolor, auctor feugiat. Vivamus adipiscing quis.</p>
+
+                    </div>
+
+                    <div class="block">
+
+                        <div class="imagebox left-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="imagebox right-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <p>Proin in purus odio, purus lacinia. Aenean tincidunt a pellentesque sollicitudin. Etiam vulputate, non dictum porttitor, ipsum semper ac metus, hendrerit lectus ipsum et augue. In eu nunc diam, sit amet volutpat magna. Vivamus id nulla at urna molestie vulputate in sed ipsum. Fusce quis dolor, auctor feugiat. Vivamus quis adipiscing venenatis ac convallis, lobortis lorem. In condimentum euismod non risus sed euismod. Donec id dictum orci non pretium.</p>
+
+                    </div>
+
+                    <div class="block last">
+
+                        <div class="imagebox right-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <div class="imagebox left-margin">
+                            <img src="images/content/features/feature_image.jpg" alt="" />
+                        </div>
+
+                        <p>Proin in purus odio, purus lacinia. Aenean tincidunt a pellentesque sollicitudin. Etiam vulputate, non dictum porttitor, ipsum semper ac metus, hendrerit lectus ipsum et augue. In eu nunc diam, sit amet volutpat magna. Vivamus id nulla at urna molestie vulputate in sed ipsum. Fusce quis dolor, auctor feugiat. Vivamus quis adipiscing venenatis ac convallis, lobortis lorem. In condimentum euismod non risus sed euismod. Donec id dictum orci non pretium.</p>
+
+                    </div>
+
+                </div>
+                <!-- End Floating Images -->
+
+            </div>
+            <!-- End Left Side -->
+
+            <!-- Start Right Side --> 
+            <div class="sidebar one-half-seg right">
+
+                <div class="corner-shadow right-one-half"></div>
+
+                <!-- Start Image Captions --> 
+                <div class="title right-pos"><h2>Image Captions</h2></div>
+
+                <div class="image-captions mosaic-feature-captions">
+
+                    <!-- Lower panel with caption -->
+                    <div class="imagebox left"> 
+                        <div class="mosaic-block lower-panel">
+                            <div class="mosaic-overlay">
+                                <div class="mosaic-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Upper panel with caption -->
+                    <div class="imagebox left"> 
+                        <div class="mosaic-block upper-panel">
+                            <div class="mosaic-overlay">
+                                <div class="mosaic-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Lower panel inside -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block lower-panel-inside">
+                            <a href="#" class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></a>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption bottom-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upper panel inside -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block upper-panel-inside">
+                            <a href="#" class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></a>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption top-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lower panel outside -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block lower-panel-outside">
+                            <div class="mosaic-overlay">
+                                <div class="mosaic-caption">
+                                    <h4>Lorem Ipsum</h4><br/>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing. <a href="#">Click here</a></p>
+                                </div>
+                            </div>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Upper panel outside -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block upper-panel-outside">
+                            <div class="mosaic-overlay">
+                                <div class="mosaic-caption">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing. <a href="#">Click here</a></p><br />
+                                    <h4>Lorem Ipsum</h4>
+                                </div>
+                            </div>
+                            <div class="mosaic-backdrop"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Slide to forward -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block slide-forward">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide to backward -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block slide-backward">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide to downward -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block slide-downward">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide to upward -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block slide-upward">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide to left-top -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block slide-left-top">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide to right-top -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block slide-right-top">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Slide to left-bottom -->
+                    <div class="imagebox left">
+                        <div class="mosaic-block slide-left-bottom">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Slide to right-bottom -->
+                    <div class="imagebox left last">
+                        <div class="mosaic-block slide-right-bottom">
+                            <div class="mosaic-overlay"><img src="images/content/features/feature_image_wide.jpg" alt="" /></div>
+                            <div class="mosaic-backdrop">
+                                <div class="mosaic-caption">
+                                    <div class="imagebox left"><img src="images/content/features/feature_image_small.jpg" alt="" /></div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <span>Lorem ipsum dolor sit amet, consectetur elit. Nunc feugiat ligula at dolor elementum dignissim. Fusce suscipit cursus metus rutrum consequat. Fusce nisl magna, feugiat feugiat venenatis nec, pulvinar et nunc. Sed aliquet, ipsum quis porta semper, nisi nulla sodales justo, at ornare eros nunc leo turpis. Quisque aliquet posuere mi, eget adipiscing ullamcorper non massa tempus. <a href="#">Click here</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Image Captions --> 
+
+            </div>
+            <!-- End Right Side --> 
+
+        <div class="clear"></div>
+        </div>
+        <!-- End Features -->
+
+    <div class="horizon-line"></div>
+    </div>
+    <!-- End Content -->
+
+</div>
+<!-- End Wrapper -->
+
+<!-- Start Footer -->
+<div id="footer">
+    
+    <div class="footer-shadow"></div>
+    <div class="horizon-line"></div>
+
+    <!-- Start Footer Blocks -->
+    <div class="footer-bg">
+    <div class="into-footer">
+
+        <!-- Start Subscribe -->
+        <div class="subscribe left">
+
+            <div class="footer-title"><h3>Subscribe</h3></div>
+
+            <div class="footer-block">
+                <p>Subscribe to our newsletter today! Receive updates, tips, support and inspiration once a month.</p>
+
+                <!-- Start Subscribe Form -->
+                <div class="subscribe-form">
+                    <form id="sub_form" method="post" action="#">
+                        <fieldset>
+                            <input class="subscribe-field" type="text" name="sub_email" id="sub_email" value="Subscribe via Email" onfocus="if (this.value == 'Subscribe via Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Subscribe via Email';}"  />
+                            <div class="subscribe-button"><a href="#" onclick="this.blur(); return false;" class="blue-button" title="Click to Subscribe"><img src="images/subscribe_icon.png" alt="Subscribe" /></a></div>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- End Subscribe Form -->
+
+                <p>As well subscribe to our <a href="#" title="Click to Subscribe">RSS Feed</a></p>
+            </div>
+        </div>
+        <!-- End Subscribe -->
+
+        <!-- Start Recent Posts -->
+        <div class="recent-posts left">
+
+            <div class="footer-title"><h3>Recent Posts</h3></div>
+
+            <div class="footer-block">
+
+                <!-- Start Recent Posts 1 -->
+                <div class="imagebox">
+                    <a href="blog_post.html"><img src="images/content/blog/blog_thumb_1.jpg" alt="Vestibulum adipiscing commodo via tellus volutpat" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="blog_post.html">Vestibulum adipiscing commodo tellus volutpat</a></h4>
+                    <span class="info">March 28, 2012 | 12 comments</span>
+                </div>
+                <!-- End Recent Posts 1 -->
+
+                <div class="imagebox">
+                    <a href="blog_post.html"><img src="images/content/blog/blog_thumb_2.jpg" alt="Pellentesque magna luctus maecenas" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="blog_post.html">Pellentesque magna luctus maecenas</a></h4>
+                    <span class="info">March 19, 2012 | 4 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="blog_post.html"><img src="images/content/blog/blog_thumb_3.jpg" alt="Euismod vitae viverra quis eu massa condimentum" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="blog_post.html">Euismod vitae viverra quis eu massa condimentum</a></h4>
+                    <span class="info">March 15, 2012 | 23 comments</span>
+                </div>
+
+                <div class="imagebox">
+                    <a href="blog_post.html"><img src="images/content/blog/blog_thumb_4.jpg" alt="Quisque gravida aliquet sapien" /></a>
+                </div>
+                <div class="text">
+                    <h4><a href="blog_post.html">Quisque gravida aliquet sapien</a></h4>
+                    <span class="info">March 11, 2012 | 10 comments</span>
+                </div>
+
+            </div>
+        </div>
+        <!-- End Recent Posts -->
+
+        <!-- Start Get in Touch -->
+        <div class="get-in-touch right">
+
+            <div class="footer-title"><h3>Get in Touch</h3></div>
+
+            <div class="footer-block">
+                <span class="location">Street Road 12/34, City Town, Country State</span>
+                <span class="phone">+1 (123) 456-7890</span>
+                <span class="email">info@yourstudioname.com</span>
+                <span class="feedback">Send email via <a href="contact.html">contact form</a></span>
+            </div>
+        </div>
+        <!-- End Get in Touch -->
+
+    </div>
+    </div>
+    <!-- End Footer Blocks -->
+
+    <!-- Start Bottom Panel -->
+    <div id="bottom">
+        <div class="into-bottom">
+            <span class="left">Casework &copy; 2013. All Rights Reserved.</span>            <div class="backtop" id="toTop" title="Back to Top"></div>
+        </div>
+    </div>
+    <!-- End Bottom Panel -->
+
+</div>
+<!-- End Footer -->
+
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- SITE TITTLE -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图书检索</title>
+
+    <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+    <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+    <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+    <link href="plugins/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+	<link rel="stylesheet" href="css/pinglun.css">
+	
+	    <style>
+        .test{
+            height: auto;
+            margin: 0 15%;
+        }
+    </style>
+</head>
+
+<body class="body-wrapper">
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-lg-9 offset-lg-0">
+                    <div style="margin-top: 20px">
+                        <a href="index.html">
+                            <h2>图书检索</h2>
+                        </a>
+                    </div>
+                </div>
+                <div div class="col-md-10 offset-md-1 col-lg-3 offset-lg-0">
+                    <div class="header">
+                    <?php
+                    error_reporting(0);
+                	if($_SESSION['username']!=NULL){
+						echo "<a class='hvr-grow' href='../Usermain.html'><i class='fa fa-user icon-user'></i></a>";
+					}
+					else{
+						echo "<a class='hvr-grow' href='../login.html'><i class='fa fa-user icon-user'></i></a>";
+					}
+                	
+               		?>
+                    </div>
+                    <div class="header-info">
+                    <?php
+                    error_reporting(0);
+                	if($_SESSION['username']!=NULL){
+						$tmp=$_SESSION['username'];
+						echo "<p>$tmp</p><p>状态：已登录</p>";
+					}
+					else{
+						echo "<p>您还未登录>_<</p><p>单击跳转至登录页！</p>";
+					}
+                	
+               		?>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="book-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-9">
+                    <div class="widget-search">
+                    <?php
+                    	echo $_SESSION['detail_html'];
+                    ?>
+                    </div>
+                    <div class="widget-search">
+                        <h4>馆藏信息</h4>
+                        <table class="table save-info">
+                            <thead>
+                                <tr>
+                                    <td>ISDN</td>
+                                    <td>书籍编号</td>
+                                    <td>年卷期</td>
+                                    <td>馆藏地</td>
+                                    <td>状态</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            	echo $_SESSION['detail_html_all'];
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="widget-search">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="widget-search detail-search-fix">
+                        <div class="detail-search-back hvr-grow">
+                            <a href="search-result.html" title="返回搜索结果">
+                                <i class="fa fa-reply"></i>
+                            </a>
+                        </div>
+
+                        <h4 class="detail-search-title">热门检索</h4>
+                        <div class="list-group">
+                            <a href="BookDetail.php?p=978-7-5442-4251-6" class="active list-group-item detail-li">白夜行</a>
+                            <a href="BookDetail.php?p=978-7-5447-7651-6" class="list-group-item detail-li">特斯拉自传</a>
+                            <a href="BookDetail.php?p=978-7-108-06286-4" class="list-group-item detail-li">汉语的意义</a>
+                            <a href="BookDetail.php?p=978-7-5133-3126-5" class="list-group-item detail-li">日本的汉字</a>
+                            <a href="BookDetail.php?p=978-7-5058-4010-8" class="list-group-item detail-li">中国机器人</a>
+                            <a href="BookDetail.php?p=978-7-5623-5704-9" class="list-group-item detail-li">法律职业伦理</a>
+                            <a href="BookDetail.php?p=978-7-5302-1200-4" class="list-group-item detail-li">平凡的世界</a>
+                            <a href="BookDetail.php?p=978-7-5479-1959-0" class="list-group-item detail-li">户外水彩画技法</a>
+                            <a href="BookDetail.php?p=978-7-213-09081-3" class="list-group-item detail-li">医生最想让你做的事</a>
+                            <a href="BookDetail.php?p=978-7-5699-2500-5" class="list-group-item detail-li">麦肯锡战略思考力</a>
+                            </ul>
+                        </div>
+                        <div class="pagination-box justify-content-center">
+                            <nav aria-label="Page navigation example">
+                                <ul class="detail-pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item  active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+    </section>
+
+<div class="test">
+<form method="post" action="comment.php">
+    <div lang="en-US" class="gitment-container gitment-editor-container">
+        <div class="gitment-editor-main">
+            <div class="gitment-editor-header">
+                <nav class="gitment-editor-tabs">
+                    <button class="gitment-editor-tab gitment-selected">编辑</button>
+                </nav>
+            </div>
+            
+            <div class="gitment-editor-body">
+                <div class="gitment-editor-write-field">
+                    <textarea name="commentdetail" placeholder="你想说些什么" title="Login to Comment"></textarea>
+                </div>
+                <div class="gitment-editor-preview-field gitment-hidden">
+                    <div class="gitment-editor-preview gitment-markdown"></div>
+                </div>
+            </div>
+             
+        </div>
+        
+        <div class="gitment-editor-footer">
+            <button class="gitment-editor-submit" title="Login to Comment">评论</button>
+        </div>
+       
+        
+    </div>
+    </form>
+    <div lang="en-US" class="gitment-container gitment-comments-container">
+        <ul class="gitment-comments-list">
+        
+        <?php
+        echo $_SESSION['comment_book'];
+        ?>
+
+        </ul>
+    </div>
+</div>
+
+
+    <!-- JAVASCRIPTS -->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/tether/js/tether.min.js"></script>
+    <script src="plugins/raty/jquery.raty-fa.js"></script>
+    <script src="plugins/bootstrap/dist/js/popper.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="js/scripts.js"></script>
+	<?php
+		echo $_SESSION['chart_book'];
+	?>
+
+</body>
+
+</html>

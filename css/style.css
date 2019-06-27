@@ -1,0 +1,2430 @@
+/*-- reset code --*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+	padding:0;
+	margin:0;
+	background:#FFF;
+}
+body a{
+    transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+	padding:0;
+}	
+p{
+	margin:0;
+	padding:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+button{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+img {
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+/*-- /reset code --*/
+body {
+	color:#999;
+	font-family: 'Muli', sans-serif;
+}
+/*-- top bar --*/
+.topbar-w3ls {
+	background-color:transparent;
+	position: absolute;
+    width: 100%;
+    z-index:1000;
+    top:0px;
+}
+/*-- search button --*/
+form.search-container {
+    margin: 17px 0 0 35px;
+}
+.search-box {
+  -webkit-transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+  transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background:transparent;
+}
+.search-box + label .search-icon {
+  color:#fff;
+}
+.search-box:hover {
+  color: white;
+  background: #c8c8c8;
+  box-shadow: 0 0 0 5px #3d4752;
+}
+.search-box:hover + label .search-icon {
+  color: white;
+}
+.search-box:focus {
+	-webkit-transition: width 0.6s cubic-bezier(0, 1.30, 0.66, 1.22), border-radius 0.6s, background 0.6s;
+	transition: width 0.6s cubic-bezier(0, 1.39, 0.66, 1.22), border-radius 0.6s, background 0.6s;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	padding-left: 15px;
+    padding-right: 40px;
+    cursor: text;
+    font-weight: 500;
+    width: 300px;
+    border-radius: auto;
+    background: #24e8ff;
+    color: white;
+}
+.search-box:focus + label .search-icon {
+  color: black;
+}
+.search-box:not(:focus) {
+  text-indent: -5000px;
+}
+#search-submit {
+  position: relative;
+  left: -5000px;
+}
+.search-icon {
+  position: relative;
+  left: -30px;
+  color: white;
+  cursor: pointer;
+  top:3px;
+}
+button.close {
+    font-size: 55px;
+}	
+.tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/*-- /search button --*/
+.top-agileits {
+    margin-top: -55px;
+	margin-bottom:10px;
+}
+a.logo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+	padding-top:20px;
+}
+a.logo h1 {
+	font-size:40px;
+	font-weight:normal;
+	color:#fff;
+	text-transform:uppercase;
+}
+.topbar-w3ls p {
+    float: right;
+    margin: -30px 50px 0 0;
+    color: #fff;
+}
+/*-- /top bar --*/
+/*-- navigation --*/
+.navbar-nav>li {
+    float: none;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 0 -2px 0 -2px;
+}
+.navbar-nav>li:nth-child(1) {
+	border:1px solid #fff;
+}
+.navbar-nav>li {
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	border-right:1px solid #fff;
+}
+ul.nav.navbar-nav {
+    text-align: center;
+}
+.navbar-nav {
+    float: none;
+}
+.navbar-inverse {
+    background-color:transparent;
+    border-color:transparent;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color:#000;
+}	
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  /*-- w3layouts --*/
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .navbar-wrapper {
+    margin-top: 95px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+}
+/*-- /navigation --*/
+/*-- banner section --*/
+section.banner {
+    margin-top: -86px;
+}
+#slideshow-controller {
+  position: absolute;
+  bottom: 10px;
+  left: 48%;
+}
+#slideshow-banner ul { 
+	position: relative; 
+}
+#slideshow-banner ul .slideshow-item { 
+	position: absolute; 
+}
+#controller-left {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  cursor: pointer;
+}
+#controller-right {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  cursor: pointer;
+}
+.controller-item {
+  display: inline-block;
+  /*-- w3 --*/
+  width: 10px;
+  height: 10px;
+  background: #f00;
+  margin-right: 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.controller-item-hover {
+  opacity: 1;
+  background: #ccc;
+  transform: rotateX(360deg);
+  transition: transform 2s;
+}
+.slideshow-transform {
+  transform: scale(1.5, 1.5);
+  transition: transform 5s;
+}
+* 	{ 
+	margin:0; 
+	padding:0; 
+}
+div#slideshow-banner { 
+	height:1012px; 
+	width:100%; 
+	overflow:hidden; 
+	position:relative; 
+	margin:0px auto; 
+}
+div#slideshow-banner ul ,div#slideshow-banner ul li { 
+	width:100%; 
+	height:100%; 
+}
+div#slideshow-banner ul li img{
+	width:100%;
+	height:100%;
+} 
+ul li {
+	list-style-type:none;
+}
+/*-- /banner section --*/
+/*-- about section --*/
+section.about-w3ls {
+	padding:100px 0;
+}
+section.about-w3ls img.mini.img-responsive {
+    width: 100px;
+    height: auto;
+    position: absolute;
+	/*-- w3l --*/
+    top: 5px;
+    left: 190px;
+}
+section.about-w3ls .col-lg-6.col-md-6.col-sm-6.about-info1 {
+	position:relative;
+}
+section.about-w3ls h2 {
+	font-size:40px;
+	font-weight:normal;
+	color:#000;
+	text-align:center;
+	margin-left:20px;
+	position:relative;
+	padding:30px 0 50px;
+	text-transform:uppercase;
+}
+section.about-w3ls h2:after {
+    content: '';
+    width: 4px;
+    height: 75px;
+    background-color:#d4ab5c;
+    position: absolute;
+    right: 200px;
+    top: 9px;
+} 
+p.about-p1 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    padding-bottom: 25px;
+}
+ul.sides li {
+	padding-bottom:20px;
+}
+ul.sides li p {
+	font-size:17px;
+	font-weight:bold;
+	color:#000;
+}
+ul.sides li p span {
+	color:#999;
+	margin-right:5px;
+}
+/*-- /about section --*/
+/*-- portfolio section --*/
+section.portfolio-w3ls {
+	padding:100px 0;
+}
+section.portfolio-w3ls h3 {
+	/*-- w3ls --*/
+	font-size:38px;
+	font-weight:400;
+	text-transform:uppercase;
+	position:relative;
+	padding-bottom:20px;
+	color:#d4ab5c;
+}
+section.portfolio-w3ls h3:before {
+	content: '';
+    background-color: #d4ab5c;
+    height: 2px;
+    width: 40px;
+    left: -55px;
+    top: 16px;
+    display: block;
+    position: absolute;
+}
+section.portfolio-w3ls p.text-header {
+	font-size: 14px;
+	font-weight:400;
+	text-transform:uppercase;
+    padding: 0px 0 40px;
+    color: #999;
+}
+/*-- /portfolio section --*/
+/*-- stats --*/
+section.stats-agileits {
+	padding:2em 0 30em;
+	position:relative;
+}
+section.stats-agileits h3 {
+	font-size:38px;
+	font-weight:400;
+	text-transform:uppercase;
+	position:relative;
+	padding-bottom:20px;
+	color:#d4ab5c;
+}
+section.stats-agileits h3:before {
+	content: '';
+    background-color: #d4ab5c;
+    height: 2px;
+    width: 40px;
+    left: -55px;
+    top: 16px;
+    display: block;
+    position: absolute;
+}
+section.stats-agileits p.text-header {
+	/*-- agileits --*/
+	font-size: 14px;
+	font-weight:400;
+	text-transform:uppercase;
+    padding: 0px 0 40px;
+    color: #999;
+}
+.stats-grid {
+	text-align: center;
+}
+.numscroller {
+    font-size: 50px;
+    margin: 0;
+    color: #156CB1;
+    font-weight: 700;
+	font-family: 'Muli', sans-serif;
+}
+.stats-grid h4 {
+    font-size: 16px;
+    color: #212121;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.stats-grid.stats-grid-1 {
+	position: absolute;
+    right: 70em;
+    top: 10em;
+}
+.stats-grid.stats-grid-2 {
+	position: absolute;
+    right: 58em;
+    top: 16em;
+}
+.stats-grid.stats-grid-3 {
+	position: absolute;
+    right: 42em;
+    top: 22em;
+}
+.stats-grid.stats-grid-4 {
+	position: absolute;
+    right: 30em;
+    top: 29em;
+}
+/*-- /stats --*/
+/*-- team section --*/
+section.team-w3ls {
+	padding:5em 0 6em;
+	background-color:#101e29;
+}
+section.team-w3ls h3 {
+	/*-- agileinfo --*/
+	font-size:38px;
+	font-weight:400;
+	text-transform:uppercase;
+	position:relative;
+	padding-bottom:20px;
+	color:#d4ab5c;
+}
+section.team-w3ls h3:before {
+	content: '';
+    background-color: #d4ab5c;
+    height: 2px;
+    width: 40px;
+    left: -55px;
+    top: 16px;
+    display: block;
+    position: absolute;
+}
+section.team-w3ls p.text-header {
+	font-size: 14px;
+	font-weight:400;
+	text-transform:uppercase;
+    padding: 0px 0 40px;
+    color: #999;
+}
+section.team-w3ls .team-info {
+	position:relative;
+}
+section.team-w3ls .team-info img.img-responsive {
+	width:85%;
+	height:auto;
+	position:absolute;
+	bottom:150px;
+	left:26px;
+}
+section.team-w3ls .team-info .team-details {
+    border: 2px solid #fff;
+    margin-top:15em;
+    width: 100%;
+    height: 285px;
+}
+section.team-w3ls .team-info .team-details h4 {
+	font-size: 20px;
+    font-weight: normal;
+    padding: 155px 0 10px;
+    text-align: center;
+}
+section.team-w3ls .team-info .team-details p {
+	font-size:17px;
+	font-weight:normal;
+	padding-bottom:10px;
+	text-align:center;
+}
+ul.social-icons1 {
+	list-style:none;
+	text-align:center;
+	text-align:-webkit-center;
+	text-align:-moz-center;
+}
+ul.social-icons1 li {
+	display:inline;
+}
+ul.social-icons1 li a i.fa {
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	font-size:16px;
+	width:35px;
+	height:35px;
+	color:#fff;
+	line-height: 35px;
+	text-align: center;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+ul.social-icons1 li a i.fa.fa-facebook {
+	background-color:#3b5998;
+}
+ul.social-icons1 li a i.fa.fa-twitter {
+	background-color:#55acee;
+}
+ul.social-icons1 li a i.fa.fa-linkedin {
+	background-color:#e68523;
+}
+ul.social-icons1 li a i.fa.fa-google-plus {
+	background-color:#dc4e41;
+}
+ul.social-icons1 li a i.fa.fa-facebook:hover {
+	background-color:#002573;
+}
+ul.social-icons1 li a i.fa.fa-twitter:hover {
+	background-color:#004A82;
+}
+ul.social-icons1 li a i.fa.fa-linkedin:hover { 
+	background-color:#BB5E00;
+}
+ul.social-icons1 li a i.fa.fa-google-plus:hover { 
+	background-color:#8A0B00;
+}
+/*-- /team section --*/
+/*-- testimonial section --*/
+section.test-w3ls {
+	padding:100px 0;
+	background-color:#101e29;
+}
+section.test-w3ls h3 {
+	font-size:38px;
+	font-weight:400;
+	text-transform:uppercase;
+	position:relative;
+	padding-bottom:20px;
+	color:#d4ab5c;
+}
+section.test-w3ls h3:before {
+	content: '';
+    background-color: #d4ab5c;
+    height: 2px;
+    width: 40px;
+    left: -55px;
+    top: 16px;
+    display: block;
+    position: absolute;
+}
+section.test-w3ls p.text-header {
+	font-size: 14px;
+	font-weight:400;
+	text-transform:uppercase;
+    padding: 0px 0 40px;
+    color: #999;
+}
+section.test-w3ls .carousel-control.left,section.test-w3ls .carousel-control.right {
+	background-image:none;
+	width: 50px;
+    height: 50px;
+	background-color:#d2ab5e;
+}
+section.test-w3ls .carousel-control.left {
+	margin:56px 0 0 58em;
+}
+section.test-w3ls .carousel-control.right {
+    margin: 106px -120px 0 0;
+}
+span.glyphicon.glyphicon-chevron-left,span.glyphicon.glyphicon-chevron-right {
+    font-size: 25px;
+}
+span.glyphicon.glyphicon-chevron-left {
+	left: 20px;
+    top: 21px;
+}
+span.glyphicon.glyphicon-chevron-right {
+	right:20px;
+	top:21px;
+}
+section.test-w3ls .test-agile {
+    border: 2px solid #fff;
+	width:100%;
+	height:380px;
+	margin-top:55px;
+} 
+section.test-w3ls img.img-responsive {
+    width: 100%;
+    height: auto;
+    margin-top: -57px;
+    z-index: 999;
+    display: block;
+}
+p.test-p1 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 35px;
+    letter-spacing: 1px;
+    padding: 50px;
+}
+p.test-p1:before {
+	content: '';
+    background-color: #d4ab5c;
+    height: 2px;
+    width: 40px;
+    left: 15px;
+    top: 65px;
+    display: block;
+    position: absolute;
+}
+p.test-p1 span.line-w3ls {
+	background-color: #d4ab5c;
+    height: 2px;
+    width: 40px;
+    margin: 0px 0 4px 20px;
+    display: inline-block;
+}
+.carousel-indicators {
+    bottom: -60px;
+}
+/*-- /testimonial section --*/
+/*-- Update section --*/
+section.update-w3ls {
+	padding:100px 0;
+}
+section.update-w3ls h3 {
+	font-size:38px;
+	font-weight:400;
+	text-transform:uppercase;
+	position:relative;
+	padding-bottom:20px;
+	color:#d4ab5c;
+}
+section.update-w3ls h3:before {
+	content: '';
+    background-color: #d4ab5c;
+    height: 2px;
+    width: 40px;
+    left: -55px;
+    top: 16px;
+    display: block;
+    position: absolute;
+}
+section.update-w3ls p.text-header {
+	font-size: 14px;
+	font-weight:400;
+	text-transform:uppercase;
+    padding: 0px 0 40px;
+    color: #999;
+}
+section.update-w3ls img.img-up {
+	width: 270px;
+    height: auto;
+    margin: -8px 0 0 -65px;
+}
+section.update-w3ls h4 {
+	font-size:20px;
+	font-weight:normal;
+	color:#000;
+	padding-bottom:15px;
+	text-transform:uppercase;
+}
+section.update-w3ls p.update-p1 {
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+	text-transform:uppercase;
+	padding-bottom:15px;
+}
+section.update-w3ls p.update-p2 {
+	font-size:14px;
+	font-weight:normal;
+	color:#999;
+	line-height:30px;
+}
+section.update-w3ls .update-agileits {
+    border: 2px solid #000;
+    height: 320px;
+    padding: 30px;
+    width: 100%;
+}
+section.update-w3ls h4#myModalLabel1,section.update-w3ls h4#myModalLabel2 {
+    padding-top:14px;
+	font-size:20px;
+	font-weight:normal;
+	color:#fff;
+	text-transform:uppercase;
+}	
+section.update-w3ls .modal-header {
+    padding: 0px;
+    background-color: #31708f;
+}	
+section.update-w3ls .modal-content .modal-body h5 {
+	font-size:20px;
+	font-weight:normal;
+	color:#d4ab5c;
+	text-transform:uppercase;
+	padding:10px 0;
+	font-family: 'Muli', sans-serif;
+}
+section.update-w3ls .modal-content .modal-body p {
+	font-size:16px;
+	color:#999;
+	line-height:30px;
+	font-weight:normal;
+}
+section.update-w3ls .modal-footer {
+    padding: 10px;
+    background-color: #31708f;
+}
+/*-- /Update Section --*/
+/*-- map section --*/
+section.map iframe.googlemaps {
+	width:100%;
+	height:400px;
+}
+/*-- /map section --*/
+/*-- contact section --*/
+section.contact-us {
+	background:url(../images/contact.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	padding:100px 0;
+}
+section.contact-us h3.text-center {
+	color:#fff;
+	font-size:45px;
+	font-weight:300;
+	padding:20px 0;
+} 
+section.contact-us p.text-center {
+	color:#fff;
+	font-size:17px;
+	font-weight:200;
+	padding:0px 0 70px;
+}
+section.contact-us .contact-info {
+    text-align: justify;
+}
+section.contact-us .contact-info h4 {
+	font-size:30px;
+	padding:20px 0;
+	color:#fff;
+	font-weight:300;
+}
+section.contact-us .contact-info p {
+	font-size:19px;
+	padding:10px 0 20px;
+	color:#fff;
+	font-weight:300;
+	position:relative;
+}
+section.contact-us .contact-info p:after {
+    content: ':';
+    position: absolute;
+    top: 10px;
+    left: 102px;
+}
+section.contact-us .contact-info p span {
+    display: inline-block;
+    width: 115px;
+    font-weight: bold;
+}
+section.contact-us .contact-info p.addr {
+    font-size: 19px;
+    padding: 0px 0 20px;
+    color: #fff;
+    font-weight:300;
+    line-height: 40px;
+}
+section.contact-us .contact-info p.addr:after {
+	content: ':';
+    position: absolute;
+    top: 0px;
+    left: 102px;
+}
+section.contact-us .contact-info p.addr span {
+    display: inline-block;
+    width: 115px;
+    font-weight: bold;
+}
+section.contact-us .contact-info a {
+	color:#fff;
+	text-decoration:none;
+}
+ul.social-icons2 {
+	list-style:none;
+	padding-bottom:10px;
+}
+ul.social-icons2 li {
+	display:inline;
+}
+ul.social-icons2 li a i.fa {
+	width:40px;
+	height:40px;
+	line-height:40px;
+	color:#fff;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	text-align: center;
+	 transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+ul.social-icons2 li a i.fa.fa-facebook {
+	background-color:#3b5998;
+	font-size:20px;
+}
+ul.social-icons2 li a i.fa.fa-twitter {
+	background-color:#55acee;
+	font-size:17px;
+}
+ul.social-icons2 li a i.fa.fa-linkedin {
+	background-color:#e68523;
+	font-size:19px;
+}
+ul.social-icons2 li a i.fa.fa-google-plus {
+	background-color:#dc4e41;
+	font-size:16px;
+}
+ul.social-icons2 li a i.fa.fa-facebook:hover {
+	background-color:#002573;
+}
+ul.social-icons2 li a i.fa.fa-twitter:hover {
+	background-color:#004A82;
+}
+ul.social-icons2 li a i.fa.fa-linkedin:hover { 
+	background-color:#BB5E00;
+}
+ul.social-icons2 li a i.fa.fa-google-plus:hover { 
+	background-color:#8A0B00;
+}
+input#name , input#email , textarea#comments {
+	color:#fff;
+	border-radius: 0px;
+	margin-bottom:10px;
+	background-color: rgba(255, 255, 255, 0);
+	font-size:17px;
+	border:1px solid #fff
+}
+input#name , input#email  {
+	height:55px;	
+}
+input::-webkit-input-placeholder {
+color: #fff !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #fff !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #fff !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #fff !important;  
+}
+textarea::-webkit-input-placeholder {
+color: #fff !important;
+}
+ 
+textarea::-moz-placeholder { /* Firefox 18- */
+color: #fff !important;  
+}
+ 
+textarea::-moz-placeholder {  /* Firefox 19+ */
+color: #fff !important;  
+}
+ 
+textarea::-ms-input-placeholder {  
+color: #fff !important;  
+}
+textarea#comments {
+	height:150px;
+}
+section.contact-us form button {
+	border-radius: 0px;
+    padding: 10px 30px;
+}
+.btn-outline1 {
+    border: solid 1px #fff;
+    font-size: 20px;
+    color: #fff;
+	font-weight:normal;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+.btn-outline1:hover, .btn-outline1:focus, .btn-outline1:active {
+    border: solid 1px #d4ab5c;
+    color: #fbfbfb;
+    background: #d4ab5c;
+}
+/*-- /contact section --*/
+/*-- footer section --*/
+section.footer {
+	padding:50px 0;
+	background-color:#000;
+}
+section.footer .copyright {
+	text-align:center;
+}
+section.footer .copyright p{
+	color:#fff;
+	font-size:17px;
+	font-weight:inherit;
+	line-height:30px;
+}
+section.footer .copyright p a{
+	text-decoration:none;
+	color:#fff;
+}
+section.footer .copyright p a:hover {
+	color:#E88D8D;
+}
+/*-- /footer section --*/
+/*-- back to top --*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.55) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+  background-size:70%;
+  border:1px solid #fff;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.cd-top:hover {
+  background-color: #000;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/*-- /back to top --*/
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+
+/*-- responsive design --*/
+@media (max-width:1440px) {
+	.tpl6 .dmbutton {
+	margin: 88px 5px 20px 5px;	
+	}
+	.stats-grid.stats-grid-1 {
+		right: 60em;	
+	}
+	.stats-grid.stats-grid-2 {
+		right: 50em;	
+	}
+	.stats-grid.stats-grid-3 {
+		right: 40em;	
+	}
+	.stats-grid.stats-grid-4 {
+		right: 30em;	
+	}
+}
+
+@media (max-width:1366px) {
+div#slideshow-banner {
+    height: 800px;
+}
+section.about-w3ls img.mini.img-responsive {
+	left: 125px;
+}
+section.about-w3ls h2:after {
+	right: 165px;
+}
+.tpl6 .dmbutton {
+    margin: 80px 5px 20px 5px;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 0px 0 0 51.5em;
+}
+section.test-w3ls .carousel-control.right {
+    margin: 0px 0px 0 0;
+}
+}
+
+@media (max-width:1080px) {
+.navbar-nav>li {
+	width:160px;	
+}
+div#slideshow-banner {
+    height: 730px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 60px;
+	width:85px;
+}
+section.about-w3ls h2 {
+    font-size: 35px;
+}
+section.about-w3ls h2:after {
+    right: 95px;
+	height: 65px;
+	top:12px;
+}
+p.about-p1 {
+    font-size: 14px;
+}
+ul.sides li p {
+    font-size: 15px;
+}
+section.team-w3ls h3,section.portfolio-w3ls h3,section.stats-agileits h3,section.test-w3ls h3,section.update-w3ls h3 {
+    font-size: 30px;
+}
+section.team-w3ls h3:before,section.portfolio-w3ls h3:before,section.stats-agileits h3:before,section.test-w3ls h3:before,section.update-w3ls h3:before {
+	width: 35px;
+    left: -45px;
+    top: 14px;
+}
+section.team-w3ls .team-info .team-details {
+	margin-top:10em;
+}
+section.team-w3ls .team-info img.img-responsive {
+    width: 82%;
+}
+p.test-p1 {
+    font-size: 14px;
+	padding:30px;
+}
+section.test-w3ls .test-agile {
+	height: 345px;
+    margin-top: 20px;
+}
+section.test-w3ls img.img-responsive {
+    margin-top: -25px;
+}
+p.test-p1:before {
+    width: 30px;
+    left: 4px;
+    top: 47px;
+}
+p.test-p1 span.line-w3ls {
+    width: 35px;
+    margin: 0px 0 4px 15px;
+}
+section.test-w3ls .carousel-control.left {
+    margin: -33px 0 0 41.5em;
+}
+section.test-w3ls .carousel-control.right {
+    margin: -33px 0px 0 0;
+}
+.stats-grid.stats-grid-1 {
+    right: 50em;
+	top:9em
+}
+.stats-grid.stats-grid-2 {
+    right: 40em;
+	top:15em;
+}
+.stats-grid.stats-grid-3 {
+    right: 30em;
+}
+.stats-grid.stats-grid-4 {
+    right: 23em;
+}
+section.update-w3ls h4 {
+	font-size:17px;
+	margin-left:-10px;
+	padding-bottom:10px;
+}
+section.update-w3ls p.update-p1 {
+	margin-left:-10px;
+	padding-bottom:10px;
+}
+section.update-w3ls p.update-p2 {
+	margin-left:-10px;
+}
+section.update-w3ls .update-agileits {
+	padding:20px;
+	height: 340px;
+}
+section.update-w3ls img.img-up {
+    width: 220px;
+    margin: 35px 0 0 -55px;
+}
+section.test-w3ls {
+    padding: 50px 0 90px;
+}
+section.about-w3ls {
+    padding: 40px 0;
+}
+section.portfolio-w3ls {
+    padding: 50px 0;
+}
+section.update-w3ls {
+    padding: 50px 0 60px;
+}
+section.contact-us {
+	padding:40px 0;
+}
+section.contact-us h3.text-center {
+	font-size:40px;
+}
+section.contact-us p.text-center {
+	font-size:14px;
+	padding: 0px 0 40px;
+}
+section.contact-us .contact-info h4 {
+    font-size: 25px;
+    padding: 15px 0;
+}
+section.contact-us .contact-info p {
+    font-size: 16px;
+    padding:0px 0 10px;
+	line-height:30px;
+}
+ul.social-icons2 {
+	margin-top:20px;
+}
+input#name, input#email {
+    height: 50px;
+	font-size:15px;
+} 
+section.contact-us form button {
+	font-size:16px;
+}
+section.footer .copyright p {
+	font-size:14px;
+}
+section.footer {
+    padding: 30px 0;
+}
+section.update-w3ls .modal-content .modal-body p {
+    font-size: 14px;
+}
+section.update-w3ls .modal-content .modal-body h5 {
+    font-size: 17px;
+}
+}
+
+@media (max-width: 1024px) {
+section.team-w3ls h3:before, section.portfolio-w3ls h3:before, section.stats-agileits h3:before, section.test-w3ls h3:before, section.update-w3ls h3:before {
+    width: 23px;
+    left: -28px;
+    top: 14px;
+}
+#controller-left,#controller-right {
+	top: 50%;
+}
+section.team-w3ls .team-info .team-details p {
+    font-size: 14px;
+}
+section.team-w3ls .team-info .team-details h4 {
+	font-size:18px;
+	padding:165px 0 15px;
+}
+section.team-w3ls {
+    padding: 3em 0 5em;
+}
+.tpl6 .dmbutton {
+    margin: 75px 5px 20px 5px;
+}
+section.contact-us .contact-info p {
+    font-size: 15px;
+}
+}
+
+@media (max-width: 991px) {
+.navbar-nav>li {
+    width: 150px;
+}
+section.team-w3ls .team-info .team-details {
+    margin-top: 3em;
+}
+section.team-w3ls .team-info img.img-responsive {
+	left:19px;
+}
+.numscroller {
+    font-size: 40px;
+}
+.stats-grid.stats-grid-1 {
+    right: 45em;
+    top: 9em;
+}
+.stats-grid.stats-grid-2 {
+    right: 35em;
+    top: 14em;
+}
+.stats-grid.stats-grid-3 {
+    right: 24em;
+	top:20em;
+}
+.stats-grid.stats-grid-4 {
+    right: 17em;
+	top: 27em;
+}
+.col-lg-4.col-md-4.col-sm-4.test-info1,.col-lg-8.col-md-8.col-sm-8.test-info2 {
+    width: 100%;
+    float:left;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 295px 0 0 30.5em;
+}
+section.test-w3ls .carousel-control.right {
+	margin:295px 0 0 0;
+}
+section.test-w3ls .test-agile {
+	margin-top:25em;
+	height:400px;
+}
+section.test-w3ls img.img-responsive {
+    margin:-380px auto 0;
+	width:50%;
+}
+p.test-p1 {
+	padding:30px 35px;
+}
+p.test-p1:before {
+    width: 30px;
+    left: 12px;
+    top: 47px;
+}
+p.test-p1 span.line-w3ls {
+    width: 30px;
+    margin: 0px 0 3px 10px;
+}
+.tpl6 .dmbutton {
+    margin: 70px 5px 20px 5px;
+}
+section.update-w3ls .update-agileits:nth-child(1) {
+	margin-bottom:30px;
+}
+section.update-w3ls .update-agileits {
+	height:265px;
+	padding:30px;
+}
+section.update-w3ls img.img-up {
+    width: 70%;
+    margin: 0 auto;
+}
+section.update-w3ls h4,section.update-w3ls p.update-p1,section.update-w3ls p.update-p2 {
+	margin-left:-50px;
+}
+ul.social-icons2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.modal-body {
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+section.update-w3ls .modal-content .modal-body h5 {
+    font-size: 17px;
+    padding-top: 20px;
+}
+}
+
+@media (max-width: 900px) {
+.navbar-nav>li {
+    width: 130px;
+}
+div#slideshow-banner {
+    height: 685px;
+}
+.col-lg-6.col-md-6.col-sm-6.about-info1,.col-lg-6.col-md-6.col-sm-6.about-info2 {
+    width: 100%;
+    float: left;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 215px;
+    width: 70px;
+	top:15px;
+}
+section.about-w3ls h2:after {
+    right: 210px;
+    height: 50px;
+    top: 20px;
+}
+section.about-w3ls img.max.img-responsive {
+    width: 100%;
+    margin: 0 auto 30px;
+}
+.tpl6 .dmbutton {
+    margin: 92px 5px 20px 5px;
+}
+.stats-grid.stats-grid-1 {
+    right: 40em;
+    top: 9em;
+}
+.stats-grid.stats-grid-2 {
+    right: 30em;
+    top: 14em;
+}
+.stats-grid.stats-grid-3 {
+    right: 20em;
+    top: 20em;
+}
+.stats-grid.stats-grid-4 {
+    right: 14em;
+    top: 27em;
+}
+}
+
+@media (max-width: 800px) {
+div#slideshow-banner {
+    height: 600px;
+}
+.navbar-nav>li {
+    width: 120px;
+}
+section.about-w3ls h2 {
+    font-size: 30px;
+	padding:30px 0 40px;
+}
+.tpl6 .dmbutton {
+    margin: 80px 5px 20px 5px;
+}
+section.stats-agileits {
+    padding: 2em 0 27em;
+}
+}
+
+@media (max-width: 768px) {
+section.team-w3ls h3, section.portfolio-w3ls h3, section.stats-agileits h3, section.test-w3ls h3, section.update-w3ls h3 {
+    font-size: 30px;
+    margin-left: 30px;
+}
+section.team-w3ls p.text-header,section.portfolio-w3ls p.text-header,section.stats-agileits p.text-header,section.test-w3ls p.text-header,section.update-w3ls p.text-header {
+	margin-left: 30px;
+}
+.tpl6 .dmbutton {
+    margin: 70px 5px 20px 5px;
+}
+.stats-grid h4 {
+    font-size: 14px;
+}
+.stats-grid.stats-grid-1 {
+    right: 37em;
+    top: 9em;
+}
+.stats-grid.stats-grid-2 {
+    right: 7em;
+    top: 9em;
+}
+.stats-grid.stats-grid-3 {
+    right: 30em;
+    top: 17em;
+}
+.stats-grid.stats-grid-4 {
+    right: 17em;
+    top: 17em;
+}
+section.stats-agileits {
+    padding: 2em 0 17em;
+}
+div#slideshow-banner {
+    height: 560px;
+}
+}
+
+@media (max-width: 767px) {
+.navbar-toggle {
+    margin-top: 20px;
+    float:right;
+}
+section.banner {
+    margin-top: 0px;
+}
+.navbar-nav>li {
+    width: 100%;
+    border: none;
+}
+.navbar-nav>li:nth-child(1) {
+    border:none;
+}
+ul.nav.navbar-nav {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-nav {
+    margin: 0;
+}
+.navbar-collapse {
+    padding: 0;
+    box-shadow: none;
+}
+.top-agileits {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+a.logo {
+    display: inline-block;
+    margin-left: 47px;
+}
+.navbar-wrapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left:auto;
+	z-index:9999;
+}
+ul.nav.navbar-nav {
+    text-align: center;
+    margin-right: 225px;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+}
+}
+
+@media (max-width: 736px) {
+div#slideshow-banner {
+    height: 365px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 180px;
+    width: 70px;
+    top: 15px;
+}
+section.about-w3ls h2:after {
+    right: 175px;
+    height: 50px;
+    top: 20px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details,section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+	width:55%;
+	margin:10em auto 15em;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile3 .team-details {
+	width:55%;
+	margin:10em auto 0;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 196px;
+	width:40%;
+	bottom:140px;
+}
+section.map iframe.googlemaps {
+    height: 300px;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 295px 0 0 29em;
+}
+.modal-header .close {
+    margin-top: -5px;
+}
+.navbar-toggle {
+	margin-left:46.5%;
+}
+#controller-left img, #controller-right img {
+	width:20px;
+	height:35px;
+}
+#controller-left, #controller-right {
+    top: 43%;
+}
+#slideshow-controller {
+	left:46%;
+} 
+}
+
+@media (max-width: 667px) {
+div#slideshow-banner {
+    height: 397px;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 176px;
+    width: 40%;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 55%;
+    margin: 10em auto 13em;
+}
+.tpl6 .dmbutton {
+    margin: 60px 5px 20px 5px;
+}
+.stats-grid.stats-grid-1 {
+    right: 32em;
+    top: 9em;
+}
+.stats-grid.stats-grid-3 {
+    right: 25em;
+    top: 17em;
+}
+.stats-grid.stats-grid-4 {
+    right: 12em;
+    top: 17em;
+}
+section.test-w3ls .test-agile {
+    margin-top: 25em;
+    height: 380px;
+}
+section.update-w3ls .update-agileits {
+    height: 250px;
+    padding: 30px;
+}
+section.contact-us h3.text-center {
+    font-size: 35px;
+	padding: 0px 0 20px;
+}
+section.contact-us p.text-center {
+	padding:0 0 20px;
+}
+.navbar-toggle {
+    margin-top: 25px;
+}
+#controller-left, #controller-right {
+    top: 36%;
+}
+}
+
+@media (max-width:640px) {
+a.logo h1 {
+    font-size: 35px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 130px;
+    width: 70px;
+    top: 15px;
+}
+section.about-w3ls h2:after {
+    right: 135px;
+    height: 50px;
+    top: 20px;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 227px 0 0 24em;
+}
+section.test-w3ls .carousel-control.right {
+	margin:227px 0 0 0; 
+}
+section.test-w3ls .test-agile {
+    margin-top: 20em;
+    height: 450px;
+}
+section.test-w3ls img.img-responsive {
+    margin: -310px auto 0;
+    width: 50%;
+}
+section.update-w3ls .update-agileits {
+    height: 265px;
+    padding: 30px;
+}
+section.update-w3ls img.img-up {
+    width: 80%;
+    margin: 11px auto 0;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 169px;
+    width: 40%;
+    bottom: 135px;
+}
+.stats-grid.stats-grid-4 {
+    right: 13em;
+    top: 17em;
+}
+#controller-left, #controller-right {
+    top: 45%;
+}
+}
+
+@media (max-width: 600px) {
+section.about-w3ls {
+    padding: 15px 0 40px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 55%;
+    margin: 6em auto 10em;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 158px;
+    width: 40%;
+}
+.tpl6 .dmbutton {
+    margin: 90px 5px 20px 5px;
+}
+.stats-grid.stats-grid-1 {
+    right: 27em;
+    top: 9em;
+}
+.stats-grid.stats-grid-3 {
+    right: 22em;
+    top: 17em;
+}
+section.test-w3ls img.img-responsive {
+    margin: -290px auto 0;
+    width: 50%;
+}
+section.test-w3ls p.text-header {
+	padding:0 0 30px;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 227px 0 0 22em;
+}
+section.update-w3ls img.img-up {
+    width: 80%;
+    margin: 20px auto 0;
+}
+div#slideshow-banner {
+    height: 364px;
+}
+#controller-left, #controller-right {
+    top: 46%;
+}
+.stats-grid.stats-grid-4 {
+    right: 11em;
+    top: 17em;
+}
+}
+
+@media (max-width: 568px) {
+.topbar-w3ls p {
+	margin: -30px 20px 0 0;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 65%;
+    margin: 10em auto 13em;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 123px;
+    width: 50%;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile3 .team-details {
+    width: 65%;
+    margin: 10em auto 0;
+}
+.tpl6 .dmbutton {
+    margin: 80px 5px 20px 5px;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 227px 0 0 21em;
+}
+section.test-w3ls .carousel-control.left, section.test-w3ls .carousel-control.right {
+	width:45px;
+	height:45px;
+}
+span.glyphicon.glyphicon-chevron-left {
+    left: 23px;
+    top: 20px;
+}
+span.glyphicon.glyphicon-chevron-left, span.glyphicon.glyphicon-chevron-right {
+    font-size: 23px;
+}
+span.glyphicon.glyphicon-chevron-right {
+    right: 22px;
+    top: 20px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 100px;
+    width: 70px;
+    top: 15px;
+}
+section.about-w3ls h2:after {
+    right: 105px;
+    height: 50px;
+    top: 20px;
+}
+section.portfolio-w3ls p.text-header {
+	padding:0 0 30px;
+}
+section.stats-agileits {
+    padding: 2em 0 16em;
+}
+section.update-w3ls p.text-header {
+	padding:0 0 30px;
+}
+section.update-w3ls img.img-up {
+    width: 80%;
+    margin: 26px auto 0;
+}
+section.contact-us .contact-info p {
+    font-size: 14px;
+}
+input#name, input#email,textarea#comments {
+	font-size:14px;
+}
+section.contact-us form button {
+    font-size: 15px;
+}
+div#slideshow-banner {
+    height: 285px;
+}
+#controller-left, #controller-right {
+    top: 41%;
+}
+.stats-grid.stats-grid-2 {
+    right: 5em;
+    top: 9em;
+}
+.stats-grid.stats-grid-4 {
+    right: 9em;
+    top: 17em;
+}
+.stats-grid.stats-grid-3 {
+    right: 21em;
+    top: 17em;
+}
+.navbar-toggle {
+	margin-top:23px;
+}
+}
+
+@media (max-width:480px) {
+div#slideshow-banner {
+    height: 320px;
+}
+.topbar-w3ls p {
+    margin: -30px 7px 0 0;
+}
+form.search-container {
+    padding-top: 15px;
+    margin: 0px 0 0 15px;
+}
+#controller-left img,#controller-right img {
+    height: 25px;
+    width: 15px;
+}
+#controller-left, #controller-right {
+    top: 45%;
+}
+section.about-w3ls h2 {
+    font-size: 25px;
+    padding: 20px 0 30px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 90px;
+    width: 50px;
+    top: 12px;
+}
+section.about-w3ls h2:after {
+    right: 85px;
+    height: 43px;
+    top: 11px;
+}
+p.about-p1 {
+	padding-bottom:15px;
+}
+section.about-w3ls img.max.img-responsive {
+    width: 100%;
+    margin: 0 auto 20px;
+}
+section.about-w3ls {
+    padding: 15px 0 30px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 65%;
+    margin: 4em auto 9em;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile3 .team-details {
+    width: 65%;
+    margin: 4em auto 0;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 101px;
+    width: 50%;
+	bottom:121px;
+}
+section.team-w3ls .team-info .team-details h4 {
+    font-size: 18px;
+    padding: 175px 0 10px;	
+}
+.tpl6 .dmbutton {
+    margin: 70px 5px 20px 5px;
+}
+.numscroller {
+    font-size: 35px;
+}
+.stats-grid.stats-grid-1 {
+    right: 19em;
+    top: 9em;
+}
+.stats-grid.stats-grid-2 {
+    right: 7em;
+    top: 9em;
+}
+.stats-grid.stats-grid-3 {
+    right: 19em;
+    top: 17em;
+}
+.stats-grid.stats-grid-4 {
+    right: 6em;
+    top: 17em;
+}
+section.team-w3ls h3, section.portfolio-w3ls h3, section.stats-agileits h3, section.test-w3ls h3, section.update-w3ls h3 {
+    font-size: 25px;
+    margin-left: 30px;
+}
+section.test-w3ls .test-agile {
+    margin-top: 20em;
+    height: 575px;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 227px 0 0 17em;
+}
+section.test-w3ls img.img-responsive {
+    margin: -270px auto 0;
+    width: 60%;
+}
+.col-sm-6.col-xs-6.update-agile1 {
+    width: 100%;
+    float: none;
+}
+.col-sm-6.col-xs-6.update-agile2 {
+    width: 100%;
+    float: left;
+}
+section.update-w3ls img.img-up {
+    width: 80%;
+    margin: -220px auto 0 32px;
+}
+section.update-w3ls .update-agileits:nth-child(1) {
+    margin: 190px 0 30px;
+	height: 295px;
+}
+.col-lg-6.col-md-6.update-info2 {
+    margin-top: 17em!important;
+}
+section.update-w3ls h4,section.update-w3ls p.update-p1,section.update-w3ls p.update-p2 {
+	margin-left:0px;
+}
+section.update-w3ls h4 {
+	padding-top:20px;
+}
+section.update-w3ls {
+    padding: 50px 0 20px;
+}
+#slideshow-controller {
+    left: 43%;
+}
+}
+
+@media (max-width: 414px) {
+div#slideshow-banner {
+    height: 280px;
+}
+.top-agileits {
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 60px;
+}
+section.about-w3ls h2:after {
+    right: 55px;
+    height: 43px;
+    top: 11px;
+}
+ul.sides li p {
+    font-size: 15px;
+    line-height: 30px;
+}
+section.about-w3ls {
+    padding: 15px 0 15px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 80%;
+    margin: 4em auto 9em;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 67px;
+    width: 60%;
+    bottom: 120px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile3 .team-details {
+    width: 80%;
+    margin: 4em auto 0;
+}
+.tpl6 .dmbutton {
+    margin: 125px 5px 20px 5px;
+}
+.stats-grid.stats-grid-1 {
+    right:240px;
+    top: 8em;
+}
+.stats-grid.stats-grid-2 {
+    right:75px;
+    top: 8em;
+}
+.stats-grid.stats-grid-3 {
+    right:235px;
+    top: 15em;
+}
+.stats-grid.stats-grid-4 {
+    right:56px;
+    top: 15em;
+}
+.stats-grid h4 {
+    font-size: 12px;
+}
+section.team-w3ls h3, section.portfolio-w3ls h3, section.stats-agileits h3, section.test-w3ls h3, section.update-w3ls h3 {
+    font-size: 22px;
+    margin-left: 30px;
+}
+section.test-w3ls img.img-responsive {
+    margin: -205px auto 0;
+    width: 85%;
+}
+section.test-w3ls .carousel-control.left {
+    margin: 227px 0 0 0em;
+}
+section.test-w3ls .carousel-control.left, section.test-w3ls .carousel-control.right {
+    width: 35px;
+    height: 35px;
+}
+span.glyphicon.glyphicon-chevron-left {
+    left: 17px;
+    top: 15px;
+}
+span.glyphicon.glyphicon-chevron-right {
+    right: 16px;
+    top: 15px;
+}
+section.test-w3ls .test-agile {
+    margin-top: 14em;
+    height: 835px;
+}
+section.test-w3ls .carousel-control.left,section.test-w3ls .carousel-control.right {
+    margin: 155px 0 0 0em;
+}
+section.update-w3ls img.img-up {
+    width: 100%;
+    margin: -155px auto 0;
+}
+section.update-w3ls .update-agileits:nth-child(1) {
+    margin: 190px 0 30px;
+    height: 340px;
+}
+section.update-w3ls .update-agileits:nth-child(1) {
+    margin: 120px 0 30px;
+    height: 370px;
+}
+.col-lg-6.col-md-6.update-info2 {
+    margin-top: 12em!important;
+}
+section.contact-us h3.text-center {
+    font-size: 30px;
+    padding: 0px 0 15px;
+}
+section.contact-us {
+    padding: 30px 0;
+}
+section.contact-us p.text-center {
+    padding: 0 0 20px;
+    line-height: 30px;
+}
+section.contact-us .contact-info h4 {
+    font-size: 20px;
+    padding: 0px 0 15px;
+}
+input#name, input#email {
+    height: 45px;
+}
+section.contact-us form button {
+	padding:8px 30px;
+}
+a.logo {
+    display: inline-block;
+    margin-left: 25px;
+}
+.navbar-toggle {
+    margin-top: 21px;
+    margin-right: 0px;
+}
+section.contact-us .contact-info p.addr {
+    font-size: 14px;
+}
+}
+
+@media (max-width:384px) {
+div#slideshow-banner {
+    height: 250px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 38px;
+}
+section.about-w3ls h2:after {
+    right: 30px;
+    height: 43px;
+    top: 11px;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 61px;
+    width: 60%;
+    bottom: 127px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 80%;
+    margin: 3em auto 7em;
+}
+.tpl6 .dmbutton {
+    margin: 115px 5px 20px 5px;
+}
+.numscroller {
+    font-size: 30px;
+}
+.stats-grid.stats-grid-1 {
+    right: 220px;
+    top: 7em;
+}
+.stats-grid.stats-grid-2 {
+    right: 70px;
+    top: 7em;
+}
+.stats-grid.stats-grid-3 {
+    right: 216px;
+    top: 14em;
+}
+.stats-grid.stats-grid-4 {
+    right: 52px;
+    top: 14em;
+}
+section.stats-agileits {
+    padding: 1em 0 13em;
+}
+section.team-w3ls h3, section.portfolio-w3ls h3, section.stats-agileits h3, section.test-w3ls h3, section.update-w3ls h3 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+section.team-w3ls h3:before, section.portfolio-w3ls h3:before, section.stats-agileits h3:before, section.test-w3ls h3:before, section.update-w3ls h3:before {
+    width: 23px;
+    left: -31px;
+    top: 10px;
+}
+p.test-p1 {
+    padding: 30px 25px;
+}
+p.test-p1:before {
+    width: 25px;
+    left: 9px;
+    top: 47px;
+}
+p.test-p1 span.line-w3ls {
+    width: 25px;
+    margin: 0px 0 3px 10px;
+}
+section.test-w3ls .test-agile {
+    margin-top: 14em;
+    height: 815px;
+}
+section.update-w3ls .update-agileits {
+    padding: 20px;
+}
+section.team-w3ls .team-info .team-details {
+	height:290px;
+}
+.navbar-toggle {
+    margin-left: 43%;
+}
+.navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+}
+a.logo {
+    margin-left: 15px;
+}
+.about-info1, .about-info2 {
+    padding: 0;
+}
+}
+
+@media (max-width: 375px) {
+a.logo h1 {
+    font-size: 30px;
+}
+#slideshow-controller {
+	left:40%;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 59px;
+    width: 60%;
+    bottom: 130px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 80%;
+    margin: 2em auto 6em;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile3 .team-details {
+    width: 80%;
+    margin: 2em auto 0;
+}
+.stats-grid.stats-grid-1 {
+    right: 210px;
+    top: 7em;
+}
+.stats-grid.stats-grid-2 {
+    right: 65px;
+    top: 7em;
+}
+.stats-grid.stats-grid-3 {
+    right: 205px;
+    top: 14em;
+}
+.stats-grid.stats-grid-4 {
+    right: 47px;
+    top: 14em;
+}
+section.test-w3ls img.img-responsive {
+    margin: -205px auto -10px;
+    width: 85%;
+}
+}
+
+@media (max-width: 320px) {
+div#slideshow-banner {
+    height: 210px;
+}
+#slideshow-controller {
+    left: 39%;
+}
+a.logo h1 {
+    font-size: 26px;
+}
+section.about-w3ls h2 {
+    font-size: 23px;
+    padding: 10px 0 20px;
+}
+section.about-w3ls img.mini.img-responsive {
+    left: 30px;
+    width: 41px;
+    top: 6px;
+}
+section.about-w3ls h2:after {
+    right: 24px;
+    height: 35px;
+    top: 4px;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile1 .team-details, section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile2 .team-details {
+    width: 100%;
+    margin: 4em auto 7em;
+}
+section.team-w3ls .col-lg-4.col-md-4.col-sm-4.team-agile3 .team-details {
+    width: 100%;
+    margin: 4em auto 0;
+}
+section.team-w3ls .team-info img.img-responsive {
+    left: 24px;
+    width: 80%;
+    bottom: 130px;
+}
+section.team-w3ls {
+    padding: 3em 0 3em;
+}
+.tpl6 .dmbutton {
+    margin: 90px 5px 20px 5px;
+}
+section.portfolio-w3ls {
+    padding: 30px 0;
+}
+.topbar-w3ls p {
+	font-size:13px;
+}
+p.about-p1 {
+    font-size: 13px;
+	padding-bottom:10px;
+}
+ul.sides li {
+    padding-bottom: 10px;
+}
+ul.sides li p {
+    font-size: 14px;
+}
+section.team-w3ls p.text-header {
+    font-size: 13px;
+}
+section.team-w3ls .team-info .team-details p {
+    font-size: 13px;
+}
+section.portfolio-w3ls p.text-header {
+    font-size: 13px;
+}
+section.stats-agileits p.text-header {
+    font-size: 13px;
+}
+section.stats-agileits {
+    padding: 1em 0 20em;
+}
+section.team-w3ls h3, section.portfolio-w3ls h3, section.stats-agileits h3, section.test-w3ls h3, section.update-w3ls h3 {
+    font-size: 19px;
+    line-height: 25px;
+    padding-bottom: 5px;
+    margin-left: 30px;
+}
+section.test-w3ls p.text-header {
+    font-size: 13px;
+	padding:0 0 20px;
+}
+section.test-w3ls .carousel-control.left, section.test-w3ls .carousel-control.right {
+    width: 30px;
+    height: 30px;
+}
+span.glyphicon.glyphicon-chevron-left, span.glyphicon.glyphicon-chevron-right {
+    font-size: 20px;
+}
+span.glyphicon.glyphicon-chevron-left {
+    left: 15px;
+    top: 14px;
+}
+span.glyphicon.glyphicon-chevron-right {
+    right: 16px;
+    top: 14px;
+}
+p.test-p1 {
+    padding: 30px 18px;
+	font-size:13px;
+}
+p.test-p1:before {
+    width: 20px;
+    left: 7px;
+    top: 47px;
+}
+section.test-w3ls .test-agile {
+    margin-top: 14em;
+    height: 890px;
+}
+section.update-w3ls {
+    padding: 30px 0 20px;
+}
+section.update-w3ls p.text-header {
+    padding: 0px 0 20px;
+	font-size:13px;
+}
+section.update-w3ls p.update-p1 {
+    font-size:13px;
+    padding-bottom: 5px;
+}
+section.update-w3ls p.update-p2 {
+    font-size: 13px;
+}
+section.update-w3ls .update-agileits {
+    padding: 10px;
+}
+section.update-w3ls img.img-up {
+    width: 100%;
+    margin: -106px auto 0;
+}
+section.update-w3ls .update-agileits:nth-child(1) {
+    margin: 100px 0 30px;
+    height: 370px;
+}
+.col-lg-6.col-md-6.update-info2 {
+    margin-top: 9em!important;
+}
+section.update-w3ls {
+    padding: 30px 0 10px;
+}
+section.map iframe.googlemaps {
+    height: 250px;
+}
+section.contact-us h3.text-center {
+    font-size: 28px;
+    padding: 0px 0 15px;
+}
+section.contact-us .contact-info h4 {
+    font-size: 19px;
+    padding: 0px 0 15px;
+}
+section.contact-us .contact-info p {
+    font-size: 13px;
+}
+input#name, input#email {
+    height: 40px;
+}
+input#name, input#email, textarea#comments {
+    font-size: 13px;
+}
+section.contact-us {
+    padding: 20px 0;
+}
+#controller-left img, #controller-right img {
+    height: 20px;
+    width: 10px;
+}
+.stats-grid.stats-grid-1 {
+    right: 95px;
+    top: 7em;
+}
+.stats-grid.stats-grid-2 {
+    right: 125px;
+    top: 12em;
+}
+.stats-grid.stats-grid-3 {
+    right: 89px;
+    top: 17em;
+}
+.stats-grid.stats-grid-4 {
+    right: 105px;
+    top: 22em;
+}
+.navbar-toggle {
+    margin: 15px 0 0;
+}
+.navbar {
+    margin-bottom: 0;
+}
+div#controller-left img, div#controller-right img {
+    width: 12px;
+    height: 20px;
+}
+#controller-left, #controller-right {
+    top: 46%;
+}
+section.footer {
+    padding: 20px 0;
+}
+section.footer .copyright p {
+    font-size: 13px;
+    line-height: 2em;
+}
+.navbar-header {
+    width: 100px;
+    float: right;
+}
+}
+
+
+
+
+
+
+
+
